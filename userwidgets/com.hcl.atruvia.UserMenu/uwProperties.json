@@ -1,0 +1,47 @@
+{
+    "classname": "UserMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "alan.paul@atruvia.de",
+                    "group": "General",
+                    "kuid": "fadcfdb0c17541dd913526e1843b2670",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 1,
+                    "propertyKey": "user",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "user",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b305cf9f490749288f57b7dbf02fabdb",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

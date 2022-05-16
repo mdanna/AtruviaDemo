@@ -1,0 +1,150 @@
+{
+    "classname": "ButtonMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f0c2e533617746ec8b02504b3df55fff",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onButtonClicked",
+                    "pw": {
+                        "displayName": "onButtonClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b63d2ed0482343edbd1a12c78c2fc9e3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e2abe712ceec414c8aa69616836c8253",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "skinIcon",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skinIcon",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblIcon",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc91cc61c88641c080f697f099697a40"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "de28b05716a84fb3ac18417edd194158",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "item",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "item",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblItem",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cb0e7fbb84944ed0b2e4d32e8a3d8550"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bdd793e4bfa542e58620ac542aaafce1",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "skinItem",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skinItem",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblItem",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cb0e7fbb84944ed0b2e4d32e8a3d8550"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c89166bc89f54e41970f5b8717dd5241",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "icon",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "icon",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblIcon",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc91cc61c88641c080f697f099697a40"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f1daec41594644ca96e59085707cde13",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 4,
+                    "propertyKey": "i18nItem",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "de28b05716a84fb3ac18417edd194158"
+                        ],
+                        "displayName": "i18nItem",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblItem",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cb0e7fbb84944ed0b2e4d32e8a3d8550"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

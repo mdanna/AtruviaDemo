@@ -1,0 +1,95 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s04c6c4718c44914ad7f8c39153ba410",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "sef1111cad684b5483a79099530d7f4e",
+    "groupcells": false,
+    "id": "lbUser",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g59f941e03254541911054e883551352",
+    "masterdata": [
+        [
+            "michelle.smith@partnera.de",
+            "michelle.smith@partnera.de"
+        ],
+        [
+            "alan.paul@atruvia.de",
+            "alan.paul@atruvia.de"
+        ],
+        [
+            "jon.davis@externalpartner.de",
+            "jon.davis@externalpartner.de"
+        ],
+        [
+            "charity.lgarto@partnerb.de",
+            "charity.lgarto@partnerb.de"
+        ],
+        [
+            "david.kim@partnera.de",
+            "david.kim@partnera.de"
+        ],
+        [
+            "klaus.weber@partnerb.de",
+            "klaus.weber@partnerb.de"
+        ],
+        [
+            "stephen.schmidt@partnerc.de",
+            "stephen.schmidt@partnerc.de"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "flxLogin",
+    "pf": "frmLogin",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "michelle.smith@partnera.de",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "michelle.smith@partnera.de",
+        "michelle.smith@partnera.de"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

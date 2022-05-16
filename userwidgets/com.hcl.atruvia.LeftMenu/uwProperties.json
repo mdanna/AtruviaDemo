@@ -1,0 +1,61 @@
+{
+    "classname": "LeftMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bd24c87366cf42e9b0bf12b78f53b324",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onItemSelected",
+                    "pw": {
+                        "displayName": "onItemSelected",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j9ec424faa5b4b128c51efd2ddbf668f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "alan.paul@atruvia.de",
+                    "group": "General",
+                    "kuid": "hf9f4eb1c2ea43cf91c9c367859b56d8",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 1,
+                    "propertyKey": "user",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "user",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j9ec424faa5b4b128c51efd2ddbf668f",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}
