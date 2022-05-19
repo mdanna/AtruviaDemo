@@ -121,6 +121,23 @@
                     "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
                     "type": "string",
                     "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "i505180e8637491a841294dd11f77bb7",
+                    "originalPropertyKey": "challengeId",
+                    "propertyIndex": 5,
+                    "propertyKey": "challengeId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "challengeId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "string",
+                    "value": ""
                 }
             ],
             "passthrough": []

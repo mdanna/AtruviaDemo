@@ -24,10 +24,6 @@ define(function() {
             this.onItemSelected('alerts');
           };
           
-          eventManager.subscribe(globals.EVT_NEW_CHALLENGE, ({select}) => {
-            select && this.selectButton(this.view.buttonDashboard);
-            select || this.unselectButton(this.view.buttonDashboard);
-          });
         }
 
         this.view.cmpUserMenu.user = this.user;

@@ -54,28 +54,35 @@ define(function() {
     },
 
     initGettersSetters: function() {
-      defineGetter(this, 'mode', () => {
-        return this._mode;
-      });
-      defineSetter(this, 'mode', value => {
-        this._mode = value;
-      });
-      defineGetter(this, 'status', () => {
-        return this._status;
-      });
-      defineSetter(this, 'status', value => {
-        this._status = value;
-      });
-      defineGetter(this, 'user', () => {
-        return this._user;
-      });
-      defineSetter(this, 'user', value => {
-        this._user = value;
-        value && (this.role = users[value].role);
-      });
-    },
+            defineGetter(this, 'mode', () => {
+                return this._mode;
+            });
+            defineSetter(this, 'mode', value => {
+                this._mode = value;
+            });
+            defineGetter(this, 'status', () => {
+                return this._status;
+            });
+            defineSetter(this, 'status', value => {
+                this._status = value;
+            });
+            defineGetter(this, 'user', () => {
+                return this._user;
+            });
+            defineSetter(this, 'user', value => {
+                this._user = value;
+                value && (this.role = users[value].role);
+            });
+            defineGetter(this, 'challengeId', () => {
+                return this._challengeId;
+            });
+            defineSetter(this, 'challengeId', value => {
+                this._challengeId = value;
+            });
+        },
 
     show(id){
+      this.challengeId = id;
       this.initEditor();
       if(this.status !== 'new'){
         this.updateFieldsForMode();
@@ -102,12 +109,20 @@ define(function() {
         this.view.flxButtonSaveToDraft.isVisible = false;
         this.view.flxButtonTeams.isVisible = true;
       } else if(this.status === 'draft' && this.mode === 'edit'){
+        this.view.lblAction.skin = 'sknLblBlue70';
         this.view.lblChallengeInfo.text = voltmx.i18n.getLocalizedString('i18n.challenge.title');
         this.view.lblAction.text =  voltmx.i18n.getLocalizedString('i18n.challenge.actions.draft');
         this.setFormComplete(this.checkFormComplete());
         this.view.flxButtonSubmit.isVisible = true;
         this.view.flxButtonSaveToDraft.isVisible = true;
         this.view.flxButtonTeams.isVisible = false;
+      } else if(this.status === 'submitted' && this.mode === 'readOnly' && this.role === 'lob'){
+        this.view.lblAction.skin = 'sknLblGrey70';
+        this.view.lblChallengeInfo.text = voltmx.i18n.getLocalizedString('i18n.challenge.title');
+        this.view.lblAction.text =  voltmx.i18n.getLocalizedString('i18n.challenge.edit');
+        this.view.flxButtonSubmit.isVisible = false;
+        this.view.flxButtonSaveToDraft.isVisible = false;
+        this.view.flxButtonTeams.isVisible = true;
       }
     },
 
@@ -190,12 +205,10 @@ define(function() {
 
     onClickSave(status){},
 
-    onSave(status){},
-
     save(status){
       var objSvc = VMXFoundry.getObjectService("ChallengeOS", {access: "online"});
       var dataObject = new voltmx.sdk.dto.DataObject("Challenge");
-      dataObject.addField("id", new Date().getTime() + '');
+      dataObject.addField("id", this.challengeId || new Date().getTime() + '');
       dataObject.addField("name", this.view.editFieldName.content);
       dataObject.addField("submission", status === 'draft' ? null : new Date());
       dataObject.addField("lob", this.view.displayLOB.email);
@@ -209,14 +222,28 @@ define(function() {
       dataObject.addField("schedule", this.view.editFieldSchedule.content);
       dataObject.addField("indicators", this.view.editFieldKpis.content);
       dataObject.addField("chat", `${this.view.editFieldName.content} Chat Group | Microsoft Teams`);
-      objSvc.create({
-        "dataObject": dataObject
-      }, (response) => {
-        this.onSave(status);
-      }, (error) => {
-        alert(JSON.stringify(error));
-        voltmx.print("Error in record creation: " + JSON.stringify(error));
-      });
-    }
+      if(this.challengeId){
+        objSvc.update({
+          "dataObject": dataObject
+        }, (response) => {
+          this.onSave(status);
+        }, (error) => {
+          alert(JSON.stringify(error));
+          voltmx.print("Error in record creation: " + JSON.stringify(error));
+        });
+      } else {
+        objSvc.create({
+          "dataObject": dataObject
+        }, (response) => {
+          this.onSave(status);
+        }, (error) => {
+          alert(JSON.stringify(error));
+          voltmx.print("Error in record creation: " + JSON.stringify(error));
+        });
+      }
+    },
+    
+    onSave(status){}
+
   };
 });

@@ -23,7 +23,6 @@ define(function() {
 
       if(!this.initDone){
         this.view.flxNew.onClick = () => {
-          eventManager.publish(globals.EVT_NEW_CHALLENGE, {select: false});
           this.onClickNewChallenge();
         };
         this.initDone = true;

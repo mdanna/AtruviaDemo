@@ -61,7 +61,6 @@ define({
         this.view.challengeEditor.save(type);
         this.view.challengeEditor.isVisible = false;
         this.view.flxDashboard.isVisible = true;
-        eventManager.publish(globals.EVT_NEW_CHALLENGE, {select: true});
       };
       
     };

@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "220dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -32,6 +32,7 @@
         "value": "856dp"
     },
     "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
         "flxChallengesHeader",
@@ -51,10 +52,6 @@
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"
@@ -65,20 +62,12 @@
             }
         },
         "b2": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"
             }
         },
         "b3": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"
