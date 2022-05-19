@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "i18nLabel": "i18n.challenge.deadline"
+    },
+    "id": "dateFieldResolution",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i2e3d9ff5b704dd8a6e8f0b4b6de5cf2",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxEditChallengeRight",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "g2867ec54fb74b979165fb8db0467c7f",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

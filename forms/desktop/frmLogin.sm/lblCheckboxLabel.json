@@ -59,6 +59,11 @@
     "name": "kony.ui.Label",
     "parent": "flxCheckboxContainer",
     "pf": "frmLogin",
+    "responsiveData": {
+        "b1": {
+            "skin": "s3f32c4776674d93a4ee4f2334465d58"
+        }
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "texti18n": "i18n.login.tandc",

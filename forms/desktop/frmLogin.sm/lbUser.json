@@ -74,6 +74,11 @@
     "name": "kony.ui.ListBox",
     "parent": "flxLogin",
     "pf": "frmLogin",
+    "responsiveData": {
+        "b1": {
+            "skin": "sd8aeefde15f44adb56d284ffd6f752a"
+        }
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "selectedkey": "michelle.smith@partnera.de",

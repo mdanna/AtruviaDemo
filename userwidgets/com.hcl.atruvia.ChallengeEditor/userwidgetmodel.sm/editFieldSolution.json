@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "i18nLabel": "i18n.challenge.solution",
+        "i18nPlaceholder": "i18n.challenge.solution.hint"
+    },
+    "id": "editFieldSolution",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cacae83435b042d8bb6d42e12a6dd00e",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxEditChallengeLeft",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "ab11c200ec2745a4add0274414177a37",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

@@ -1,0 +1,87 @@
+{
+    "classname": "ChallengeActions",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e5c55bb369db4b2f887a951f35b98af0",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickPdf",
+                    "pw": {
+                        "displayName": "onClickPdf",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b083273411154dc3883eda53b47a0ced",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jb1f039ff5b142f2b7d07ad40c24258e",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickEdit",
+                    "pw": {
+                        "displayName": "onClickEdit",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b083273411154dc3883eda53b47a0ced",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "adcbf487dac745a7b56ed2f3bb68fa71",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onClickDelete",
+                    "pw": {
+                        "displayName": "onClickDelete",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b083273411154dc3883eda53b47a0ced",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "c94272dd50cc4f59a111e3eb8e919091",
+                    "originalPropertyKey": "role",
+                    "propertyIndex": 1,
+                    "propertyKey": "role",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "role",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b083273411154dc3883eda53b47a0ced",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

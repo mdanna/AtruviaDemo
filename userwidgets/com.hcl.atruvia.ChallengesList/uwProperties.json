@@ -1,0 +1,102 @@
+{
+    "classname": "ChallengesList",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c5e9b73aceeb4df0996ed5db7d9a7fbb",
+                    "paramList": [],
+                    "propertyKey": "loadData",
+                    "pw": {
+                        "displayName": "loadData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "eee16df2efee438b9cdefcaac71d11f7",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onEdit",
+                    "pw": {
+                        "displayName": "onEdit",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fd103832622641899e4260939860b1c0",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onDelete",
+                    "pw": {
+                        "displayName": "onDelete",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e7875177c5ac4947a04e492185fdc383",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onViewPdf",
+                    "pw": {
+                        "displayName": "onViewPdf",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "j85fb763560143f0abe74f0848e84d11",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 1,
+                    "propertyKey": "user",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "user",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

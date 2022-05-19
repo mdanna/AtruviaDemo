@@ -1,0 +1,248 @@
+{
+    "classname": "ChallengesListRow",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i06192587369436bb1f8bdcabdbc749d",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onRowClick",
+                    "pw": {
+                        "displayName": "onRowClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fd636c2575784c1781e2f56b36fc1f4f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "jdc99c89b9a3438fa0f51eb368875611",
+                    "originalPropertyKey": "onClickPdf",
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickPdf",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "customPropInfo": {
+                            "type": "event"
+                        },
+                        "displayName": "onClickPdf",
+                        "srcWidget": "challengeActions",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "f549c1d3a31741dd831ed5548f1d6fb0",
+                    "translateAtInstance": false,
+                    "type": "event"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a24119ed92054b3a840ee58722145d14",
+                    "originalPropertyKey": "onClickEdit",
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickEdit",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "customPropInfo": {
+                            "type": "event"
+                        },
+                        "displayName": "onClickEdit",
+                        "srcWidget": "challengeActions",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "f549c1d3a31741dd831ed5548f1d6fb0",
+                    "translateAtInstance": false,
+                    "type": "event"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j7dcc2e33b3a47ada506b4ac791b86d8",
+                    "originalPropertyKey": "onClickDelete",
+                    "propertyIndex": 4,
+                    "propertyKey": "onClickDelete",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "customPropInfo": {
+                            "type": "event"
+                        },
+                        "displayName": "onClickDelete",
+                        "srcWidget": "challengeActions",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "f549c1d3a31741dd831ed5548f1d6fb0",
+                    "translateAtInstance": false,
+                    "type": "event"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f7270bcd8e144648849d705328c4daae",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "challengeId",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "challengeId",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblId",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i8e9f1df1bde4256ba7b490133c5e244"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g8440716413545c1ba2f0e3b07410bb9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "name",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "name",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f52299ada086465cbf10f80764df9d98"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "aee482d5ecad48ff891eac0120e58b62",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "submission",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "submission",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblSubmission",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fdb3c42a7162490d95924f15c7073275"
+                },
+                {
+                    "access": "Enable",
+                    "defaultValue": "michelle.smith@partnera.de",
+                    "group": "General",
+                    "kuid": "c83d2bf471d84ea2a1f3ea94a831c43e",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 4,
+                    "propertyKey": "user",
+                    "pw": {
+                        "access": "readwrite",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "user",
+                        "isHiddenInTool": false,
+                        "srcWidget": "ChallengeUser",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "a6dbad53484b40ecaec16b7e10f0e1da",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c899b1c1d7f348e98c22a3fbed5a827c",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "resolution",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "resolution",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblResolution",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a611720c6e38401ebf5316cc98442bf3"
+                },
+                {
+                    "access": "Enable",
+                    "defaultValue": "draft",
+                    "group": "General",
+                    "kuid": "ac79f9d844a149ebb67c5e0ae47f86c3",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 6,
+                    "propertyKey": "status",
+                    "pw": {
+                        "access": "readwrite",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "status",
+                        "isHiddenInTool": false,
+                        "srcWidget": "challengeStatus",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "jde41710a3ad4b74a92e8a03c26c4b04",
+                    "type": "list selector",
+                    "value": [
+                        "draft",
+                        "published",
+                        "submitted",
+                        "closed",
+                        "denied"
+                    ]
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

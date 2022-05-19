@@ -1,0 +1,47 @@
+{
+    "classname": "ChallengeUser",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "michelle.smith@partnera.de",
+                    "group": "General",
+                    "kuid": "e986477267da49acb60b6ce2138eb911",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 1,
+                    "propertyKey": "user",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "user",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d1cc91989d10419ea6d9a22205fbd193",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

@@ -1,0 +1,61 @@
+{
+    "classname": "DashboardHeader",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b92e905202634342b102afd4ef3134e5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickNewChallenge",
+                    "pw": {
+                        "displayName": "onClickNewChallenge",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e64f2d53a6dd4a9184cd4a968eabef17",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "lob",
+                    "group": "General",
+                    "kuid": "g6b3db953cf94d9c8d8931521e7427a2",
+                    "originalPropertyKey": "userRole",
+                    "propertyIndex": 1,
+                    "propertyKey": "userRole",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "userRole",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e64f2d53a6dd4a9184cd4a968eabef17",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

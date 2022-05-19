@@ -1,0 +1,53 @@
+{
+    "classname": "ChallengeStatus",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "draft",
+                    "group": "General",
+                    "kuid": "c4d67f8322cb4e38ab7df1f47fa6a90e",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 1,
+                    "propertyKey": "status",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "d4826c6d069b425fac15ca9981d30769",
+                    "type": "list selector",
+                    "value": [
+                        "draft",
+                        "published",
+                        "submitted",
+                        "closed",
+                        "denied"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

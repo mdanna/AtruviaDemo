@@ -1,0 +1,69 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "i18nLabel": "i18n.challenge.schedule",
+        "i18nPlaceholder": "i18n.challenge.schedule.hint"
+    },
+    "id": "editFieldSchedule",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "acf537eb752a4be2aea131779a78dab9",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxEditChallengeLeft",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "ab11c200ec2745a4add0274414177a37",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

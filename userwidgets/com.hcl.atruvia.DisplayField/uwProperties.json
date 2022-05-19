@@ -1,0 +1,126 @@
+{
+    "classname": "DisplayField",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "General"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ec8a49310507469494614b2fe6fc729a",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 1,
+                    "propertyKey": "i18nLabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "j4061f4c7632486a9b6d7edfb426aae6"
+                        ],
+                        "displayName": "i18nLabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "eb7aeb6cc8854e04901e292f84c76ec2"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ceee3b0d71224afba15c10aea425567a",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "eb7aeb6cc8854e04901e292f84c76ec2"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f55b35057a5f4864bfb1d4e032af0e1e",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 3,
+                    "propertyKey": "i18nText",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "e4a8b92dc76d402c9f798d73641ee85b"
+                        ],
+                        "displayName": "i18nText",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblContent",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a14b8d42288f4a2e8b8d8b817175b498"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e4a8b92dc76d402c9f798d73641ee85b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblContent",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a14b8d42288f4a2e8b8d8b817175b498"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

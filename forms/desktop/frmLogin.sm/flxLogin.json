@@ -4,10 +4,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "96dp"
-    },
     "_margin_": [
         0,
         0,
@@ -58,8 +54,16 @@
     "kuid": "ffd687543b4a461f926557e312fb957f",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxRight",
+    "parent": "flxContentRight",
     "pf": "frmLogin",
+    "responsiveData": {
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

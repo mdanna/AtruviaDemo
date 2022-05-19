@@ -1,7 +1,7 @@
 define(function() {
 
 	return {
-		constructor: function(baseConfig, layoutConfig, pspConfig) {
+		constructor(baseConfig, layoutConfig, pspConfig) {
 			this.view.preShow = () => {
               if(!this.initDone){
                 this.view.onClick = () => {
@@ -14,10 +14,8 @@ define(function() {
               }
             };
 		},
-		//Logic for getters/setters of custom properties
-		initGettersSetters: function() {
-
-		},
+		
+		initGettersSetters() {},
       
       onButtonClicked(){}
 	};

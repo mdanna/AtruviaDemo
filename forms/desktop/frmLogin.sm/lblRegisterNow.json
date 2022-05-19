@@ -59,6 +59,11 @@
     "name": "kony.ui.Label",
     "parent": "flxRegister",
     "pf": "frmLogin",
+    "responsiveData": {
+        "b1": {
+            "skin": "sa5ac5c8049841e08098272ef59c40c2"
+        }
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "texti18n": "i18n.login.registerlink",

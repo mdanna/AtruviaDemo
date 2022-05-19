@@ -1,0 +1,195 @@
+{
+    "classname": "EditField",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h566c8bd61b44b4ea670abaa82bc1ff2",
+                    "paramList": [],
+                    "propertyKey": "setReadOnly",
+                    "pw": {
+                        "displayName": "setReadOnly",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ab11c200ec2745a4add0274414177a37",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "jeaff8a65884444386234c880a04cef5",
+                    "originalPropertyKey": "onTextChange",
+                    "propertyIndex": 1,
+                    "propertyKey": "onTextChange",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onTextChange",
+                        "srcWidget": "txtField",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "j06e004c672e4615ae8c98a12d514bfc",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e3a92d23286a4cfe9ed735ebcec75a2d",
+                    "originalPropertyKey": "content",
+                    "propertyIndex": 5,
+                    "propertyKey": "content",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "content",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ab11c200ec2745a4add0274414177a37",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cc586693d6a146fda8544dd5a5134953",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 1,
+                    "propertyKey": "i18nLabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "j4061f4c7632486a9b6d7edfb426aae6"
+                        ],
+                        "displayName": "i18nLabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d65cac4532b842b0a43b8fbc1d8ff89e"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j4061f4c7632486a9b6d7edfb426aae6",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d65cac4532b842b0a43b8fbc1d8ff89e"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b7229c0c6bf944ab80062443029a9bc2",
+                    "originalPropertyKey": "i18n_placeholder",
+                    "propertyIndex": 3,
+                    "propertyKey": "i18nPlaceholder",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "placeholder"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "ec68755e12964255a27003685e8b9325"
+                        ],
+                        "displayName": "i18nPlaceholder",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txtField",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "j06e004c672e4615ae8c98a12d514bfc"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ec68755e12964255a27003685e8b9325",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 4,
+                    "propertyKey": "placeholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "placeholder",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txtField",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "j06e004c672e4615ae8c98a12d514bfc"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

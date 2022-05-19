@@ -1,0 +1,135 @@
+{
+    "classname": "ChallengeEditor",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e4b14a6f891042d0be5a90cd91f778bd",
+                    "paramList": [],
+                    "propertyKey": "show",
+                    "pw": {
+                        "displayName": "show",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cc9eed57cf1742389255febf0f469b7c",
+                    "paramList": [],
+                    "propertyKey": "save",
+                    "pw": {
+                        "displayName": "save",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e1dcc08d1f654492987bdc5737f088f3",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSave",
+                    "pw": {
+                        "displayName": "onSave",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j48a92daee3c485a89233852ae46c9a9",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickSave",
+                    "pw": {
+                        "displayName": "onClickSave",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "jd901140d7104457909dec74c744f5b7",
+                    "originalPropertyKey": "user",
+                    "propertyIndex": 1,
+                    "propertyKey": "user",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "user",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "edit",
+                    "group": "General",
+                    "kuid": "e77cfdede515441ab63d973a702afa2f",
+                    "originalPropertyKey": "mode",
+                    "propertyIndex": 2,
+                    "propertyKey": "mode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "mode",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "new",
+                    "group": "General",
+                    "kuid": "d33b4dac310a46ef8da02b02219deda5",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 4,
+                    "propertyKey": "status",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

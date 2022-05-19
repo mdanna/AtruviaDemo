@@ -1,0 +1,271 @@
+{
+    "classname": "Popup",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i92bb976afc24454934991fd8a7cf5f5",
+                    "paramList": [],
+                    "propertyKey": "show",
+                    "pw": {
+                        "displayName": "show",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b990f7865f604d0b9375ab0d961ebc2f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c628a5e3132d40cf8766cfafdca7ad77",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickLeft",
+                    "pw": {
+                        "displayName": "onClickLeft",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b990f7865f604d0b9375ab0d961ebc2f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e719b2234e544027987fb066afee0e03",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickCenter",
+                    "pw": {
+                        "displayName": "onClickCenter",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b990f7865f604d0b9375ab0d961ebc2f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c80633551cac418ca9478778c2fc2951",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickRight",
+                    "pw": {
+                        "displayName": "onClickRight",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b990f7865f604d0b9375ab0d961ebc2f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "draft",
+                    "group": "General",
+                    "kuid": "d078631b60434dabbcff5051a7f81d38",
+                    "originalPropertyKey": "type",
+                    "propertyIndex": 1,
+                    "propertyKey": "type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b990f7865f604d0b9375ab0d961ebc2f",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ac0e7325093645e2bf24aa94039ec9f4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "baba72514aa447b9be5863a88ed2f6bd"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ea75405e66bd4f0bbc9d36593a8c8a69",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "subtitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "subtitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblSubtitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "dad4bc9af4ef4b9da5818a51aa81aa23"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a6712247646348ca93b2d0bf281963c3",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "buttonLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonLeft",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonLeft",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b5781c270d4f4c1aae2a0189bcbba17c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f0483f260442402d91c770bf8cf1ea7f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "buttonCenter",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonCenter",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonCenter",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bcb07d2c18344a279de930270ac2093c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fe5c87a519ea41689f5c34aca7354957",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "buttonRight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonRight",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonRight",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g30074ee22d246ab972574f8880983b8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "eb4820921a1049afb3e87fe58d4201b2",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 7,
+                    "propertyKey": "showButtonLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showButtonLeft",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxButtonLeft",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a6dc5f5661574359a074b9de21a5c4bf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b83e7c962f784b2ca8824c50dc06c69d",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 8,
+                    "propertyKey": "showButtonCenter",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showButtonCenter",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxButtonCenter",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "bdf2cb0d08c648e9aa8d49e40599f7e3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b3d7a135647f4bcd8c68ef2678b9d30b",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 9,
+                    "propertyKey": "showButtonRight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showButtonRight",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxButtonRight",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "i06dbe8c5f304e7ebe8fb6abe97d548b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

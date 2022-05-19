@@ -1,0 +1,90 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "97dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "856dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {},
+    "id": "challengesList",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h985243189fc41d69c0d39c02f4624f2",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxDashboard",
+    "pf": "frmHome",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "800dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "800dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "800dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c32f15088551493692254ca721a32149",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

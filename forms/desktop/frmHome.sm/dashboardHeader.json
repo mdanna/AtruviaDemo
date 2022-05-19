@@ -1,0 +1,90 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "70dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "1000dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {},
+    "id": "dashboardHeader",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e4fad9bca80d48a7bae29d5c3a0a3c39",
+    "masterType": 1,
+    "minwidth": {
+        "type": "string",
+        "value": "1000dp"
+    },
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxDashboard",
+    "pf": "frmHome",
+    "responsiveData": {
+        "b1": {
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b2": {
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "856dp"
+            }
+        },
+        "b3": {
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "856dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "e64f2d53a6dd4a9184cd4a968eabef17",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}
