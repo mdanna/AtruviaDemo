@@ -12,26 +12,42 @@ define({
         this.view.flxStatistics.isVisible = selection === 'statistics';
         this.view.flxAlerts.isVisible = selection === 'alerts';
       };
-      
+
       this.view.dashboardHeader.onClickNewChallenge = () => {
         this.view.flxDashboard.isVisible = false;
         this.view.challengeEditor.mode = 'edit';
         this.view.challengeEditor.status = 'new';
         this.view.challengeEditor.show();
       };
-      
+
       this.view.challengesList.onEdit = ({id, status, mode}) => {
         this.view.flxDashboard.isVisible = false;
         this.view.challengeEditor.mode = mode;
         this.view.challengeEditor.status = status;
         this.view.challengeEditor.show(id);
       };
-      
+
+      this.view.challengesList.onDelete = ({id}) => {
+        var objSvc = VMXFoundry.getObjectService("ChallengeOS", {
+          "access": "online"
+        });
+
+        var dataObject = new kony.sdk.dto.DataObject("Challenge");
+        dataObject.addField("id", id);
+        objSvc.deleteRecord({
+          "dataObject": dataObject
+        }, (response) => {
+          this.view.challengesList.loadData();        
+        }, (error) => {
+          kony.print("Error in record deletion: " + JSON.stringify(error));
+        });        
+      };
+
       this.view.challengeEditor.onClickSave = (status) => {
-        
+
         let type = status, title, subtitle, buttonLeft = "", buttonCenter = "", buttonRight = "",
-          showButtonLeft = false, showButtonCenter = false, showButtonRight = false;
-        
+            showButtonLeft = false, showButtonCenter = false, showButtonRight = false;
+
         switch(status){
           case 'draft':
             title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.draftsaved.header');
@@ -48,21 +64,21 @@ define({
           default:
             break;
         }
-        
+
         this.view.cmpPopup.show({type, title, subtitle, buttonLeft, buttonCenter, buttonRight,
-          showButtonLeft, showButtonCenter, showButtonRight});
+                                 showButtonLeft, showButtonCenter, showButtonRight});
       };
-      
+
       this.view.challengeEditor.onSave = (status) => {
         this.view.challengesList.loadData();
       };
-      
+
       this.view.cmpPopup.onClickCenter = (type) => {
         this.view.challengeEditor.save(type);
         this.view.challengeEditor.isVisible = false;
         this.view.flxDashboard.isVisible = true;
       };
-      
+
     };
 
     this.view.preShow = () => {
@@ -71,7 +87,7 @@ define({
       this.view.dashboardHeader.userRole = users[user].role;
       this.view.challengesList.user = user;
       this.view.challengeEditor.user = user;
-      
+
       this.view.flxDashboard.isVisible = true;
       this.view.flxStatistics.isVisible = false;
       this.view.flxAlerts.isVisible = false;
