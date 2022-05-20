@@ -326,6 +326,11 @@
     "hybridaddrkey": "",
     "hybridhttpsportkey": "",
     "hybridportkey": "",
+    "ide_appEvents": {
+        "desktop": {
+            "preappinit": "AS_AppEvents_ec9c1d42e841467fbba823dc3337ea3d"
+        }
+    },
     "imagewhendownloading": "",
     "initialRotationPreferenceKey": "landscape",
     "inputaccessoryviewtype": "nextprevtoolbar",

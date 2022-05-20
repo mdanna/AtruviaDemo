@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "sefe0abc238e4f77852becc6f347883b",
-    "_text_": "",
+    "_text_": "Cancel",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -54,8 +54,8 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "b5781c270d4f4c1aae2a0189bcbba17c",
+    "isvisible": true,
+    "kuid": "e16954e6f301424b9861c629d8287748",
     "name": "kony.ui.Label",
     "parent": "flxButtonLeft",
     "pf": "userwidgetmodel",

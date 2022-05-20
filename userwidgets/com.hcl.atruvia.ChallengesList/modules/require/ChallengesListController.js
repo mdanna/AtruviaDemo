@@ -35,7 +35,7 @@ define(function() {
       } else if(role === 'hub'){
         odataUrl += `status ne 'draft'`;
       } else if(role === 'xpa'){
-        odataUrl += `status eq 'published`;
+        odataUrl += `status eq 'published'`;
       }
 
       dataObject.odataUrl = odataUrl;
@@ -53,6 +53,7 @@ define(function() {
           challengesListRow.user = record.lob;
           challengesListRow.resolution = record.resolution ? utils.displayDate(new Date(record.resolution)) : "";
           challengesListRow.status = record.status;
+          challengesListRow.role = users[this.user].role;
           challengesListRow.onRowClick = () => this.onEdit({id: record.id, status: record.status, mode: 'readOnly'});
           challengesListRow.onClickEdit = () => this.onEdit({id: record.id, status: record.status, mode: 'edit'});
           challengesListRow.onClickDelete = () => this.onDelete({id: record.id, status: record.status});

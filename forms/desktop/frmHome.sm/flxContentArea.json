@@ -38,7 +38,8 @@
         "flxDashboard",
         "challengeEditor",
         "flxStatistics",
-        "flxAlerts"
+        "flxAlerts",
+        "userProfile"
     ],
     "clipbounds": true,
     "containerweight": 100,

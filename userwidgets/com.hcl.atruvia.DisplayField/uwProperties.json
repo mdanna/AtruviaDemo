@@ -23,7 +23,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ec8a49310507469494614b2fe6fc729a",
+                    "kuid": "d5466256b2114d6f95de291d4311797d",
                     "originalPropertyKey": "i18n_text",
                     "propertyIndex": 1,
                     "propertyKey": "i18nLabel",
@@ -44,12 +44,12 @@
                         "uiRepresentation": "Label-Combobox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "eb7aeb6cc8854e04901e292f84c76ec2"
+                    "srcWgtKUID": "f03873147d1a43b2a2c4c5b633fca26b"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ceee3b0d71224afba15c10aea425567a",
+                    "kuid": "hb6e559c0eaf467cbdba1730be2e8949",
                     "originalPropertyKey": "text",
                     "propertyIndex": 2,
                     "propertyKey": "label",
@@ -65,12 +65,12 @@
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "eb7aeb6cc8854e04901e292f84c76ec2"
+                    "srcWgtKUID": "f03873147d1a43b2a2c4c5b633fca26b"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "f55b35057a5f4864bfb1d4e032af0e1e",
+                    "kuid": "f99e5619c7c44e64bc5a291d7d46b153",
                     "originalPropertyKey": "i18n_text",
                     "propertyIndex": 3,
                     "propertyKey": "i18nText",
@@ -91,12 +91,12 @@
                         "uiRepresentation": "Label-Combobox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "a14b8d42288f4a2e8b8d8b817175b498"
+                    "srcWgtKUID": "e0998834e07a4026ae0b831b3837d3f6"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "e4a8b92dc76d402c9f798d73641ee85b",
+                    "kuid": "aa82ec49f55749af9110248afa251c07",
                     "originalPropertyKey": "text",
                     "propertyIndex": 4,
                     "propertyKey": "text",
@@ -112,7 +112,7 @@
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "a14b8d42288f4a2e8b8d8b817175b498"
+                    "srcWgtKUID": "e0998834e07a4026ae0b831b3837d3f6"
                 }
             ]
         },

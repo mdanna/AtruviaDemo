@@ -1,0 +1,80 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s4c060e6749b41a5b7d3e1120b66d306",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "sef1111cad684b5483a79099530d7f4e",
+    "groupcells": false,
+    "id": "lbDropdown",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f2e76440a0374a7f9a6c085ba68fa8dd",
+    "masterdata": [
+        [
+            "en",
+            "English",
+            "i18n.language.en"
+        ],
+        [
+            "de",
+            "German",
+            "i18n.language.de"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "DropdownField",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "en",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "en",
+        "English"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

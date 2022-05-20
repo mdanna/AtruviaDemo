@@ -11,6 +11,19 @@ define({
         this.view.flxDashboard.isVisible = selection === 'dashboard';
         this.view.flxStatistics.isVisible = selection === 'statistics';
         this.view.flxAlerts.isVisible = selection === 'alerts';
+        if(selection === 'profile'){
+          const user = this.navigationContext.user;
+          this.view.userProfile.photo = users[user].photoLarge;
+          this.view.userProfile.name = users[user].name;
+          this.view.userProfile.username = users[user].name;
+          this.view.userProfile.title = users[user].title;
+          this.view.userProfile.usertitle = users[user].title;
+          this.view.userProfile.email = user;
+          this.view.userProfile.language = voltmx.store.getItem(`language_${user}`) || globals.DEFAULT_LANGUAGE;
+          this.view.userProfile.isVisible = true;
+        } else {
+          this.view.userProfile.isVisible = false;
+        }
       };
 
       this.view.dashboardHeader.onClickNewChallenge = () => {
@@ -28,19 +41,18 @@ define({
       };
 
       this.view.challengesList.onDelete = ({id}) => {
-        var objSvc = VMXFoundry.getObjectService("ChallengeOS", {
-          "access": "online"
+        this.view.cmpPopup.show({
+          type: `delete_${id}`, 
+          title: voltmx.i18n.getLocalizedString('i18n.dialog.challenge.delete.header'), 
+          subtitle: voltmx.i18n.getLocalizedString('i18n.dialog.challenge.delete.info'), 
+          buttonLeft: voltmx.i18n.getLocalizedString('i18n.dialog.challenge.delete.cancel'), 
+          buttonCenter: "", 
+          buttonRight: voltmx.i18n.getLocalizedString('i18n.dialog.challenge.delete.ok'),
+          showButtonLeft: true, 
+          showButtonCenter: false, 
+          showButtonRight: true
         });
 
-        var dataObject = new kony.sdk.dto.DataObject("Challenge");
-        dataObject.addField("id", id);
-        objSvc.deleteRecord({
-          "dataObject": dataObject
-        }, (response) => {
-          this.view.challengesList.loadData();        
-        }, (error) => {
-          kony.print("Error in record deletion: " + JSON.stringify(error));
-        });        
       };
 
       this.view.challengeEditor.onClickSave = (status) => {
@@ -61,6 +73,42 @@ define({
             buttonCenter = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.next');
             showButtonCenter = true;
             break;
+          case 'published':
+            title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.published.header');
+            subtitle = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.published.info');
+            buttonCenter = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.next');
+            showButtonCenter = true;
+            break;
+          case 'denied':
+            title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.denied.header');
+            subtitle = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.denied.info');
+            buttonCenter = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.next');
+            showButtonCenter = true;
+            break;
+          case 'unpublished':
+            title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.unpublish.header');
+            subtitle = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.unpublish.info');
+            buttonLeft = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.unpublish.cancel');
+            buttonRight = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.unpublish.ok');
+            showButtonLeft = true;
+            showButtonRight = true;
+            break;
+          case 'closed':
+            title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.close.header');
+            subtitle = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.close.info');
+            buttonLeft = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.close.cancel');
+            buttonRight = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.close.ok');
+            showButtonLeft = true;
+            showButtonRight = true;
+            break;
+          case 'pdf':
+            title = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.pdfexport.header');
+            subtitle = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.pdfexport.info');
+            buttonLeft = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.pdfexport.find');
+            buttonRight = voltmx.i18n.getLocalizedString('i18n.dialog.challenge.pdfexport.done');
+            showButtonLeft = true;
+            showButtonRight = true;
+            break;
           default:
             break;
         }
@@ -69,14 +117,30 @@ define({
                                  showButtonLeft, showButtonCenter, showButtonRight});
       };
 
-      this.view.challengeEditor.onSave = (status) => {
-        this.view.challengesList.loadData();
-      };
-
       this.view.cmpPopup.onClickCenter = (type) => {
         this.view.challengeEditor.save(type);
         this.view.challengeEditor.isVisible = false;
         this.view.flxDashboard.isVisible = true;
+      };
+
+      this.view.cmpPopup.onClickRight = (type) => {
+        switch(type){
+          case 'unpublished':
+          case 'closed':
+            this.view.challengeEditor.save(status);
+            this.view.challengeEditor.isVisible = false;
+            this.view.flxDashboard.isVisible = true;
+            break;
+          default:
+            if(type.startsWith('delete_')){
+              this.deleteChallenge(type.replace('delete_', ''));
+            }
+            break;
+        }
+      };
+
+      this.view.challengeEditor.onSave = (status) => {
+        this.view.challengesList.loadData();
       };
 
     };
@@ -92,8 +156,25 @@ define({
       this.view.flxStatistics.isVisible = false;
       this.view.flxAlerts.isVisible = false;
       this.view.challengeEditor.isVisible = false;
+      this.view.userProfile.isVisible = false;
       this.view.challengesList.loadData();
     };
+  },
+
+  deleteChallenge(id){
+    var objSvc = VMXFoundry.getObjectService("ChallengeOS", {
+      "access": "online"
+    });
+
+    var dataObject = new kony.sdk.dto.DataObject("Challenge");
+    dataObject.addField("id", id);
+    objSvc.deleteRecord({
+      "dataObject": dataObject
+    }, (response) => {
+      this.view.challengesList.loadData();        
+    }, (error) => {
+      kony.print("Error in record deletion: " + JSON.stringify(error));
+    });        
   }
 
 });

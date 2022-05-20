@@ -33,18 +33,19 @@ define(function() {
       });
     },
     
-    show({type, title, subtitle, buttonLeft = '', buttonCenter, buttonRight = '', 
-               showButtonLeft = false, showButtonCenter = true, showButtonRight = false}){
+    show({type, title, subtitle, buttonLeft, buttonCenter, buttonRight, 
+               showButtonLeft, showButtonCenter, showButtonRight}){
       this.type = type;
       this.title = title;
       this.subtitle = subtitle;
       this.buttonLeft = buttonLeft;
       this.buttonCenter = buttonCenter;
       this.buttonRight = buttonRight;
-      this.showButtonLeft = showButtonLeft;
-      this.showButtonCenter = showButtonCenter;
-      this.showButtonRight = showButtonRight;
       this.view.isVisible = true;
+      this.view.flxButtonLeft.isVisible = showButtonLeft;
+      this.view.flxButtonCenter.isVisible = showButtonCenter;
+      this.view.flxButtonRight.isVisible = showButtonRight;
+      this.view.forceLayout();
     },
     
     onClickLeft(){},

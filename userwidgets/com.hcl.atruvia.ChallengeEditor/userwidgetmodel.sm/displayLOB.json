@@ -35,7 +35,9 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
+    "data": {
+        "role": "lob"
+    },
     "id": "displayLOB",
     "info": null,
     "iscustomlayout": false,

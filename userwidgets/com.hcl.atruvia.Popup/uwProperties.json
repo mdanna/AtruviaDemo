@@ -67,7 +67,9 @@
                 "General"
             ],
             "events": [],
-            "properties": [],
+            "properties": [
+                "General"
+            ],
             "widgets": []
         },
         "properties": {
@@ -136,72 +138,9 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "a6712247646348ca93b2d0bf281963c3",
-                    "originalPropertyKey": "text",
-                    "propertyIndex": 4,
-                    "propertyKey": "buttonLeft",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "look",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "buttonLeft",
-                        "isHiddenInTool": false,
-                        "srcWidget": "lblButtonLeft",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "Label"
-                    },
-                    "srcWgtKUID": "b5781c270d4f4c1aae2a0189bcbba17c"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "f0483f260442402d91c770bf8cf1ea7f",
-                    "originalPropertyKey": "text",
-                    "propertyIndex": 5,
-                    "propertyKey": "buttonCenter",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "look",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "buttonCenter",
-                        "isHiddenInTool": false,
-                        "srcWidget": "lblButtonCenter",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "Label"
-                    },
-                    "srcWgtKUID": "bcb07d2c18344a279de930270ac2093c"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "fe5c87a519ea41689f5c34aca7354957",
-                    "originalPropertyKey": "text",
-                    "propertyIndex": 6,
-                    "propertyKey": "buttonRight",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "look",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "buttonRight",
-                        "isHiddenInTool": false,
-                        "srcWidget": "lblButtonRight",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "Label"
-                    },
-                    "srcWgtKUID": "g30074ee22d246ab972574f8880983b8"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
                     "kuid": "eb4820921a1049afb3e87fe58d4201b2",
                     "originalPropertyKey": "isVisible",
-                    "propertyIndex": 7,
+                    "propertyIndex": 4,
                     "propertyKey": "showButtonLeft",
                     "pw": {
                         "access": "readwrite",
@@ -222,7 +161,7 @@
                     "group": "General",
                     "kuid": "b83e7c962f784b2ca8824c50dc06c69d",
                     "originalPropertyKey": "isVisible",
-                    "propertyIndex": 8,
+                    "propertyIndex": 5,
                     "propertyKey": "showButtonCenter",
                     "pw": {
                         "access": "readwrite",
@@ -243,7 +182,7 @@
                     "group": "General",
                     "kuid": "b3d7a135647f4bcd8c68ef2678b9d30b",
                     "originalPropertyKey": "isVisible",
-                    "propertyIndex": 9,
+                    "propertyIndex": 6,
                     "propertyKey": "showButtonRight",
                     "pw": {
                         "access": "readwrite",
@@ -258,6 +197,69 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "i06dbe8c5f304e7ebe8fb6abe97d548b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b8bb9f66cd54420aa22b1cd0be06fc5b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 7,
+                    "propertyKey": "buttonLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonLeft",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonLeft",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e16954e6f301424b9861c629d8287748"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f0483f260442402d91c770bf8cf1ea7f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 8,
+                    "propertyKey": "buttonCenter",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonCenter",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonCenter",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bcb07d2c18344a279de930270ac2093c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "dd0c00066f604cda96312cfd8211759f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 9,
+                    "propertyKey": "buttonRight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "buttonRight",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblButtonRight",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e43342e69b4247dfad71265de7b045fe"
                 }
             ]
         },

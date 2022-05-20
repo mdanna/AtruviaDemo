@@ -1,0 +1,115 @@
+{
+    "classname": "DropdownField",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bad152f8549c48ec826224d353dc7e2c",
+                    "originalPropertyKey": "onSelection",
+                    "propertyIndex": 1,
+                    "propertyKey": "onSelection",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onSelection",
+                        "srcWidget": "lbDropdown",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "ListBox"
+                    },
+                    "srcWgtKUID": "f2e76440a0374a7f9a6c085ba68fa8dd",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e6d3307ace7449f882a4a95049c66e8d",
+                    "originalPropertyKey": "selection",
+                    "propertyIndex": 3,
+                    "propertyKey": "selection",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "selection",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fc84c0c23fce46849fb6006ee7b2c49d",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e4e67e51fbf342c1aa9894969db1353c",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 1,
+                    "propertyKey": "i18nLabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "j4061f4c7632486a9b6d7edfb426aae6"
+                        ],
+                        "displayName": "i18nLabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a17772b74b1e4102b1a6ae8b585fdb92"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h12ff6a29e214b3a99acc7a9bf1c9e3f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a17772b74b1e4102b1a6ae8b585fdb92"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

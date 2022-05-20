@@ -40,7 +40,9 @@
     "canUpdateUI": true,
     "children": [
         "flxButtonTeams",
-        "flxButtonsRight"
+        "flxButtonsDraft",
+        "flxButtonsPublished",
+        "flxButtonsSubmitted"
     ],
     "clipbounds": true,
     "containerweight": 100,

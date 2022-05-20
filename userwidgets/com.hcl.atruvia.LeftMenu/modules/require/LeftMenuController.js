@@ -24,6 +24,8 @@ define(function() {
             this.onItemSelected('alerts');
           };
           
+          this.view.flxProfile.onClick = () => this.onItemSelected('profile');
+          
         }
 
         this.view.cmpUserMenu.user = this.user;

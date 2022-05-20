@@ -4,10 +4,6 @@
         "type": "string",
         "value": "100%"
     },
-    "_left_": {
-        "type": "number",
-        "value": "50"
-    },
     "_margin_": [
         0,
         0,
@@ -51,7 +47,7 @@
     "id": "flxButtonCenter",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "bdf2cb0d08c648e9aa8d49e40599f7e3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

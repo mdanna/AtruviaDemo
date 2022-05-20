@@ -34,8 +34,8 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "flxChallengeDetails",
-        "flxAction"
+        "flxFirstLineLeft",
+        "flxFirstLineRight"
     ],
     "clipbounds": true,
     "containerweight": 100,

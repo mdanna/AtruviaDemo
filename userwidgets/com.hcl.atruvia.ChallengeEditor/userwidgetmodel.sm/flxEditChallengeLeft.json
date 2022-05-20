@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "96%"
+        "value": "94%"
     },
     "allboxes": [],
     "autogrowmode": 1,
@@ -60,12 +60,7 @@
     "parent": "flxEditChallengeLeftContainer",
     "pf": "userwidgetmodel",
     "responsiveData": {
-        "b2": {
-            "width": {
-                "type": "string",
-                "value": "94%"
-            }
-        }
+        "b2": {}
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

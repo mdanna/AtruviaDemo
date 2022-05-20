@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -29,11 +29,15 @@
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "94%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblChallengeDetails"
     ],
@@ -44,10 +48,10 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c8c35acfd83c494083c43172ebb9ca53",
+    "kuid": "d586ac26e45849438483c34bc9ad9328",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFirstLine",
+    "parent": "flxFirstLineLeft",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

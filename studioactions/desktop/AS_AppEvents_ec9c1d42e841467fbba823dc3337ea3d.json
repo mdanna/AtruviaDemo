@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_ec9c1d42e841467fbba823dc3337ea3d": {
+        "id": "AS_AppEvents_ec9c1d42e841467fbba823dc3337ea3d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ab2caa3e7856410c9ea463c89532c426",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "      voltmx.i18n.setCurrentLocaleAsync(globals.DEFAULT_LANGUAGE, () => {\n        voltmx.print(`Set language: ${globals.DEFAULT_LANGUAGE}`);\n      }, (error) => alert(JSON.stringify(error)));\n",
+            "parentId": null
+        }]
+    }
+}

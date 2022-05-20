@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "sefe0abc238e4f77852becc6f347883b",
-    "_text_": "",
+    "_text_": "OK",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -55,7 +55,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "g30074ee22d246ab972574f8880983b8",
+    "kuid": "e43342e69b4247dfad71265de7b045fe",
     "name": "kony.ui.Label",
     "parent": "flxButtonRight",
     "pf": "userwidgetmodel",

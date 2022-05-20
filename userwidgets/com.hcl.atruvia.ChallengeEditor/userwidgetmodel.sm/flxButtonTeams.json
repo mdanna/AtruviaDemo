@@ -44,7 +44,7 @@
     "id": "flxButtonTeams",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "g2c47252da534740b819a98ae6be8a15",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",

@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "96%"
+        "value": "94%"
     },
     "allboxes": [],
     "autogrowmode": 1,
@@ -44,7 +44,7 @@
         "displayFieldSubmitted",
         "dateFieldResolution",
         "displayLOB",
-        "displayFieldReviewer",
+        "displayReviewer",
         "displayFieldChatLink",
         "flxButtons"
     ],
@@ -61,12 +61,7 @@
     "parent": "flxEditChallengeRightContainer",
     "pf": "userwidgetmodel",
     "responsiveData": {
-        "b2": {
-            "width": {
-                "type": "string",
-                "value": "94%"
-            }
-        }
+        "b2": {}
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

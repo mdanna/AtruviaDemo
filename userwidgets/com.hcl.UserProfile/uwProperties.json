@@ -1,0 +1,176 @@
+{
+    "classname": "UserProfile",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "af053a4ca69e4a139cfe95b7910b7da1",
+                    "originalPropertyKey": "username",
+                    "propertyIndex": 4,
+                    "propertyKey": "username",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "username",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "caa56ff080434b17bf56dc6c9c2fca81",
+                    "originalPropertyKey": "usertitle",
+                    "propertyIndex": 5,
+                    "propertyKey": "usertitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "usertitle",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "h496c6a9268a496dae18c2d1c29fdb87",
+                    "originalPropertyKey": "email",
+                    "propertyIndex": 6,
+                    "propertyKey": "email",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "email",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ce4ebc2226af448b9c9136123d91b3e8",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "name",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "name",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cfca53b855d54aeb9789373e8a3ed641"
+                },
+                {
+                    "access": "Enable",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "h26ee985d69a49c39363f6833d05197b",
+                    "originalPropertyKey": "selection",
+                    "propertyIndex": 1,
+                    "propertyKey": "language",
+                    "pw": {
+                        "access": "readwrite",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "language",
+                        "isHiddenInTool": false,
+                        "srcWidget": "dropdownFieldLanguage",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "c58ed13c806e41f884f6986b2b719f10",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ae23f586f20e4ad599d96ffe9e9e08e9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g34f81849e0c475eb4fb4b59ee8d3412"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "dd3d3bf7a36c44d891ea31cebcec700c",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 3,
+                    "propertyKey": "photo",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "photo",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgPhoto",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ffee89e18d674a8d895f648694cdf996"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl",
+    "version": "1.0.0"
+}

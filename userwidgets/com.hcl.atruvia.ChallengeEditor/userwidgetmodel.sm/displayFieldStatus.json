@@ -35,9 +35,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {
-        "i18nLabel": "i18n.challenge.status"
-    },
+    "data": {},
     "id": "displayFieldStatus",
     "info": null,
     "iscustomlayout": false,

@@ -49,7 +49,7 @@
     "id": "flxDashboard",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b0ac7267cf1d482bbaf0e10112653691",
     "layouttype": 4,
     "name": "kony.ui.FlexScrollContainer",

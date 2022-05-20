@@ -1,0 +1,86 @@
+{
+    "classname": "DisplayPerson",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d554f5fce9c741e29b28fa6768ae2fbc",
+                    "originalPropertyKey": "role",
+                    "propertyIndex": 5,
+                    "propertyKey": "role",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "role",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fedc69070462438f8a5f07526e443f94",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e5cbc7de6d6343d299c0ee70a9844077",
+                    "originalPropertyKey": "email",
+                    "propertyIndex": 6,
+                    "propertyKey": "email",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "email",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fedc69070462438f8a5f07526e443f94",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ef5d178581b9497897eef094ad770c6e",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "name",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "name",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "hb9c8f7599e8472594f7bcf6cdb1968f"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.atruvia",
+    "version": "1.0.0"
+}

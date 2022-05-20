@@ -42,18 +42,15 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "aaa2e25a77d74ff2bb71ddd5f4006624",
+    "kuid": "d21ccfaa2c8642cfbc8121c75d6571a6",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "flxEditChallengeRight",
     "pf": "userwidgetmodel",
-    "responsiveData": {
-        "b2": {}
-    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "g62a3f91cb2243789c211b3a9c6e1cf2",
+    "sourceUserWidget": "d828d77552b84b2585bb784847d8f2bc",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

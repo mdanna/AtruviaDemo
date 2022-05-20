@@ -100,7 +100,25 @@
             "widgets": []
         },
         "properties": {
-            "custom": [],
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "h8b6c9d1c047484ea1a157d21a008b3f",
+                    "originalPropertyKey": "role",
+                    "propertyIndex": 7,
+                    "propertyKey": "role",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "role",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fd636c2575784c1781e2f56b36fc1f4f",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
             "passthrough": [
                 {
                     "access": "Enable",

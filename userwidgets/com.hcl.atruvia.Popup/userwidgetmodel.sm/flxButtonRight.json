@@ -43,7 +43,7 @@
     "id": "flxButtonRight",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "i06dbe8c5f304e7ebe8fb6abe97d548b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
