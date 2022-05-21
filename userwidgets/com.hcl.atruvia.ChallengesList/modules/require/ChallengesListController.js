@@ -2,14 +2,14 @@ define(function() {
 
   return {
     constructor(baseConfig, layoutConfig, pspConfig) {
-		this.view.preShow = () => {
-          if(!this.initDone){
-            this.view.onClick = () => this.onRowClick(this.id);
-            this.initDone = true;
-          }
-        };
+      this.view.preShow = () => {
+        if(!this.initDone){
+          this.view.onClick = () => this.onRowClick(this.id);
+          this.initDone = true;
+        }
+      };
     },
-    
+
     initGettersSetters: function() {
       defineGetter(this, 'user', () => {
         return this._user;
@@ -19,9 +19,7 @@ define(function() {
       });
     },
 
-    loadData(filter){
-      this.view.flxChallengesList.removeAll();
-      
+    loadData(filter, searchFilter){
       const role = users[this.user].role;
 
       var objSvc = VMXFoundry.getObjectService("ChallengeOS", {
@@ -44,32 +42,44 @@ define(function() {
       objSvc.fetch({
         "dataObject": dataObject
       }, (response) => {
-        response.records.forEach((record) => {
-          const challengesListRow = new com.hcl.atruvia.ChallengesListRow({
-            id: `challengeListRow${new Date().getTime()}`
-          }, {}, {});
-          challengesListRow.challengeId = record.id;
-          challengesListRow.name = record.name;
-          challengesListRow.submission = record.submission ? utils.displayDate(new Date(record.submission)) : "";
-          challengesListRow.user = record.lob;
-          challengesListRow.resolution = record.resolution ? utils.displayDate(new Date(record.resolution)) : "";
-          challengesListRow.status = record.status;
-          challengesListRow.role = users[this.user].role;
-          challengesListRow.onRowClick = () => this.onEdit({id: record.id, status: record.status, mode: 'readOnly'});
-          challengesListRow.onClickEdit = () => this.onEdit({id: record.id, status: record.status, mode: 'edit'});
-          challengesListRow.onClickDelete = () => this.onDelete({id: record.id, status: record.status});
-          challengesListRow.onViewPdf = () => this.onDelete({id: record.id});
-          this.view.flxChallengesList.add(challengesListRow);
-        });
-        
-        eventManager.publish(globals.EVENT_DATA_LOADED, ({count: response.records.length, filter: filter}));
+        this.data = response.records;
+        this.applySearchFilter(filter, searchFilter);
+
       }, (error) => {
         alert("Failed to fetch challenges: " + JSON.stringify(error));
       });
-      
+
       this.view.forceLayout();
     },
-    
+
+    applySearchFilter(filter, searchFilter){
+      searchFilter = searchFilter || '';
+      const filteredData = this.data.filter((record) => {
+        return record.name.toLowerCase().includes(searchFilter.toLowerCase()) || record.id.toLowerCase().includes(searchFilter.toLowerCase());
+      });
+
+      this.view.flxChallengesList.removeAll();
+      filteredData.forEach((record) => {
+        const challengesListRow = new com.hcl.atruvia.ChallengesListRow({
+          id: `challengeListRow${new Date().getTime()}`
+        }, {}, {});
+        challengesListRow.challengeId = record.id;
+        challengesListRow.name = record.name;
+        challengesListRow.submission = record.submission ? utils.displayDate(new Date(record.submission)) : "";
+        challengesListRow.user = record.lob;
+        challengesListRow.resolution = record.resolution ? utils.displayDate(new Date(record.resolution)) : "";
+        challengesListRow.status = record.status;
+        challengesListRow.role = users[this.user].role;
+        challengesListRow.onRowClick = () => this.onEdit({id: record.id, status: record.status, mode: 'readOnly'});
+        challengesListRow.onClickEdit = () => this.onEdit({id: record.id, status: record.status, mode: 'edit'});
+        challengesListRow.onClickDelete = () => this.onDelete({id: record.id, status: record.status});
+        challengesListRow.onViewPdf = () => this.onDelete({id: record.id});
+        this.view.flxChallengesList.add(challengesListRow);
+      });
+
+      eventManager.publish(globals.EVENT_DATA_LOADED, ({count: filteredData.length, filter: filter}));
+    },
+
     onEdit({id, status, mode}){},
     onDelete({id, status}){},
     onViewPdf({id}){},

@@ -9,7 +9,7 @@ define({
       this.view.flxLoginButton.onClick = () => {
         const user = this.view.lbUser.selectedKey;
         voltmx.i18n.setCurrentLocaleAsync(voltmx.store.getItem(`language_${user}`) || globals.DEFAULT_LANGUAGE, () => {
-          new voltmx.mvc.Navigation('frmHome').navigate({user, filter: 'all'});
+          new voltmx.mvc.Navigation('frmHome').navigate({user, filter: 'all', searchFilter: ""});
         }, (error) => alert(JSON.stringify(error)));
       };
     };

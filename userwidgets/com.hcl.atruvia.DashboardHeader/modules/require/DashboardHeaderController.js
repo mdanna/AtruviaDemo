@@ -3,8 +3,47 @@ define(function() {
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
       this.view.preShow = () => {
+        if(!this.initDone){
+          this.view.flxFilter.onClick = () => {
+            eventManager.publish(globals.EVENT_OPTIONS_OPEN, {
+              option: this.view.lblFilterKey.text
+            });
+          };
+
+          eventManager.subscribe(globals.EVENT_OPTIONS_SELECT, ({selection}) => {
+            selection = selection || 'all';
+            this.view.lblFilter.text = voltmx.i18n.getLocalizedString(this.getI18nKeyForFilter(selection));
+            this.view.lblFilterKey.text = selection;
+          });
+
+          eventManager.subscribe(globals.EVENT_DATA_LOADED, ({count, filter}) => {
+            let infoText;
+            if(filter === 'all'){
+              infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges')}`;
+            } else {
+              const filterName = voltmx.i18n.getLocalizedString(this.getI18nKeyForFilter(filter));
+              infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges.filter')} '${filterName}'`;
+            }
+            this.view.lblChallengesInfo.text = infoText;
+          });
+
+          this.view.flxNew.onClick = () => {
+            this.onClickNewChallenge();
+          };
+
+          this.view.txtSearch.onTextChange = () => {
+            this.onSearchChange(this.view.txtSearch.text);
+          };
+
+          this.initDone = true;
+        }
+
+        this.view.txtSearch.text = '';
+        this.view.lblFilter.text = voltmx.i18n.getLocalizedString(this.getI18nKeyForFilter('all'));
+        this.view.lblFilterKey.text = 'all';
+        
         this.view.flxNewContainer.isVisible = this.userRole === 'lob';
-        this.view.flxFilterContainer.isVisible = this.userRole === 'lob'|| this.userRole === 'hub';
+        this.view.flxFilterContainer.isVisible = this.userRole === 'lob' || this.userRole === 'hub';
         switch(this.userRole){
           case 'lob':
             this.view.flxSearchContainer.width = '50%';
@@ -23,37 +62,6 @@ define(function() {
         }
       };
 
-      if(!this.initDone){
-        this.view.flxFilter.onClick = () => {
-          eventManager.publish(globals.EVENT_OPTIONS_OPEN, {
-            option: this.view.lblFilterKey.text
-          });
-        };
-
-        eventManager.subscribe(globals.EVENT_OPTIONS_SELECT, ({selection}) => {
-          const i18nKey = this.getI18nKeyForFilter(selection);
-          this.view.lblFilterKey.text = selection;
-          this.view.lblFilter.text = i18nKey ? voltmx.i18n.getLocalizedString(i18nKey) : '';
-        });
-
-        eventManager.subscribe(globals.EVENT_DATA_LOADED, ({count, filter}) => {
-          let infoText;
-          if(filter === 'all'){
-            infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges')}`;
-          } else {
-            const filterName = voltmx.i18n.getLocalizedString(this.getI18nKeyForFilter(filter));
-            infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges.filter')} '${filterName}'`;
-          }
-          this.view.lblChallengesInfo.text = infoText;
-        });
-
-        this.view.flxNew.onClick = () => {
-          this.onClickNewChallenge();
-        };
-
-        this.initDone = true;
-      }
-
     },
     //Logic for getters/setters of custom properties
     initGettersSetters: function() {
@@ -66,6 +74,7 @@ define(function() {
     },
 
     onClickNewChallenge(){},
+    onSearchChange(){},
 
     getI18nKeyForFilter(selection){
       let i18nKey = null;

@@ -36,8 +36,7 @@
     },
     "children": [
         "lblFilter",
-        "lblIconDown",
-        "lblFilterKey"
+        "lblIconDown"
     ],
     "clipbounds": true,
     "containerweight": 100,

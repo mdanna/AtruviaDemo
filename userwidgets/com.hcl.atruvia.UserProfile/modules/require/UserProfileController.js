@@ -8,7 +8,11 @@ define(function() {
             const language = this.view.dropdownFieldLanguage.selection;
             voltmx.i18n.setCurrentLocaleAsync(language, () => {
               voltmx.store.setItem(`language_${this.email}`, language);
-              new voltmx.mvc.Navigation('frmRedirect').navigate({user: this.email, filter: this.filter});
+              new voltmx.mvc.Navigation('frmRedirect').navigate({
+                user: this.email, 
+                filter: this.filter || 'all', 
+                searchFilter: this.searchFilter || ''
+              });
             }, (error) => alert(JSON.stringify(error)));
           };
           this.initDone = true;
@@ -50,6 +54,12 @@ define(function() {
             });
             defineSetter(this, 'filter', value => {
                 this._filter = value;
+            });
+            defineGetter(this, 'searchFilter', () => {
+                return this._searchFilter;
+            });
+            defineSetter(this, 'searchFilter', value => {
+                this._searchFilter = value;
             });
         },
   };

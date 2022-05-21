@@ -57,12 +57,29 @@
     "isvisible": true,
     "kuid": "f65888b8c3424b7e8de241fd736a1b75",
     "name": "kony.ui.Label",
-    "parent": "flxFilter",
+    "parent": "flxFilterContainer",
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {
+            "height": {
+                "type": "string",
+                "value": "1dp"
+            },
             "isVisible": false,
-            "text": ""
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "s614a0bb13ed4236b938a29926b9f317",
+            "text": "",
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "1dp"
+            }
         }
     },
     "retaincontentalignment": false,

@@ -9,12 +9,25 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "b92e905202634342b102afd4ef3134e5",
+                    "kuid": "d03621b26f1d407aae233880b9912f79",
                     "paramList": [],
                     "propertyIndex": 1,
                     "propertyKey": "onClickNewChallenge",
                     "pw": {
                         "displayName": "onClickNewChallenge",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e64f2d53a6dd4a9184cd4a968eabef17",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a8ae5816a4af46ad9126baecd0fa0c3e",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onSearchChange",
+                    "pw": {
+                        "displayName": "onSearchChange",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "e64f2d53a6dd4a9184cd4a968eabef17",

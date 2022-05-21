@@ -5,11 +5,23 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "c5e9b73aceeb4df0996ed5db7d9a7fbb",
+                    "kuid": "b22e50eb93194ee7a297d1172fe903af",
                     "paramList": [],
                     "propertyKey": "loadData",
                     "pw": {
                         "displayName": "loadData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c32f15088551493692254ca721a32149",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fc930fd7fcac4854897cc700c9ed2f02",
+                    "paramList": [],
+                    "propertyKey": "applySearchFilter",
+                    "pw": {
+                        "displayName": "applySearchFilter",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "c32f15088551493692254ca721a32149",

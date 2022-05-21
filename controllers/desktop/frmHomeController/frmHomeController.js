@@ -7,6 +7,11 @@ define({
         this.view.flxContentArea.width = `${this.view.frame.width - 160}dp`;
       };
 
+      this.view.dashboardHeader.onSearchChange = (searchFilter) => {
+        this.searchFilter = searchFilter;
+        this.view.challengesList.applySearchFilter(this.filter || 'all', searchFilter);
+      };
+
       this.view.leftMenu.onItemSelected = (selection) => {
         this.view.challengeEditor.isVisible = false;
         this.view.flxDashboard.isVisible = selection === 'dashboard';
@@ -15,6 +20,7 @@ define({
         if(selection === 'profile'){
           const user = this.navigationContext.user;
           this.view.userProfile.filter = this.filter;
+          this.view.userProfile.searchFilter = this.searchFilter;
           this.view.userProfile.photo = users[user].photoLarge;
           this.view.userProfile.name = users[user].name;
           this.view.userProfile.username = users[user].name;
@@ -54,7 +60,7 @@ define({
           showButtonCenter: false, 
           showButtonRight: true
         });
-
+        
       };
 
       this.view.challengeEditor.onClickSave = (status) => {
@@ -147,7 +153,7 @@ define({
       
       eventManager.subscribe(globals.EVENT_OPTIONS_SELECT, ({selection}) => {
         this.filter = selection;
-        this.view.challengesList.loadData(this.filter);
+        this.view.challengesList.loadData(this.filter, this.searchFilter);
       });
 
     };
@@ -155,6 +161,7 @@ define({
     this.view.preShow = () => {
       const user = this.navigationContext.user;
       this.filter = this.navigationContext.filter;
+      this.searchFilter = this.navigationContext.searchFilter;
       
       this.view.leftMenu.user = user;
       this.view.dashboardHeader.userRole = users[user].role;
@@ -166,7 +173,7 @@ define({
       this.view.flxAlerts.isVisible = false;
       this.view.challengeEditor.isVisible = false;
       this.view.userProfile.isVisible = false;
-      this.view.challengesList.loadData(this.filter);
+      this.view.challengesList.loadData(this.filter, this.searchFilter);
     };
   },
 
@@ -180,7 +187,7 @@ define({
     objSvc.deleteRecord({
       "dataObject": dataObject
     }, (response) => {
-      this.view.challengesList.loadData(this.filter);        
+      this.view.challengesList.loadData(this.filter, this.searchFilter);        
     }, (error) => {
       kony.print("Error in record deletion: " + JSON.stringify(error));
     });        
