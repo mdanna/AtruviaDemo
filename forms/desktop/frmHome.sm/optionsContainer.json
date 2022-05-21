@@ -4,7 +4,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "70dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -36,47 +36,23 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {},
-    "id": "dashboardHeader",
+    "id": "optionsContainer",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "e4fad9bca80d48a7bae29d5c3a0a3c39",
+    "isvisible": false,
+    "kuid": "h9a7bc92fab140e495412917043f607b",
     "masterType": 1,
-    "minwidth": {
-        "type": "string",
-        "value": "1000dp"
-    },
     "name": "kony.ui.UserWidgetInstance",
     "parent": "flxDashboardContent",
     "pf": "frmHome",
     "responsiveData": {
-        "b1": {
-            "minWidth": {
-                "type": "string",
-                "value": ""
-            }
-        },
-        "b2": {
-            "minWidth": {
-                "type": "string",
-                "value": ""
-            }
-        },
-        "b3": {
-            "minWidth": {
-                "type": "string",
-                "value": ""
-            },
-            "width": {
-                "type": "string",
-                "value": "100%"
-            }
-        }
+        "b2": {},
+        "b3": {}
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "e64f2d53a6dd4a9184cd4a968eabef17",
+    "sourceUserWidget": "a1c99284326446059435f3e87928845e",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

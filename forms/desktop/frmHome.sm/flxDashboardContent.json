@@ -1,10 +1,8 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "70dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -33,50 +31,44 @@
         "type": "string",
         "value": "100%"
     },
+    "allboxes": [],
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {},
-    "id": "dashboardHeader",
+    "children": [
+        "dashboardHeader",
+        "challengesList",
+        "optionsContainer"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxDashboardContent",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e4fad9bca80d48a7bae29d5c3a0a3c39",
-    "masterType": 1,
-    "minwidth": {
-        "type": "string",
-        "value": "1000dp"
-    },
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxDashboardContent",
+    "kuid": "i214b8705cad426d8c24838ccda782fc",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxDashboard",
     "pf": "frmHome",
     "responsiveData": {
-        "b1": {
-            "minWidth": {
-                "type": "string",
-                "value": ""
-            }
-        },
         "b2": {
-            "minWidth": {
+            "width": {
                 "type": "string",
-                "value": ""
+                "value": "856dp"
             }
         },
         "b3": {
-            "minWidth": {
-                "type": "string",
-                "value": ""
-            },
             "width": {
                 "type": "string",
-                "value": "100%"
+                "value": "856dp"
             }
         }
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "e64f2d53a6dd4a9184cd4a968eabef17",
-    "wType": "UserWidgetInstance",
-    "zindex": 1
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

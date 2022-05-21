@@ -53,6 +53,10 @@
             "name": "frmHomeController"
         }
     },
+    "currentBreakpoint": {
+        "kuid": "b3",
+        "width": 640
+    },
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
@@ -117,6 +121,9 @@
     "titleBarSkin": "s127cf57527a4dddbed0844db341140f",
     "titlebar": true,
     "type": 3,
+    "vizProps": {
+        "globalRespDesignEnabled": false
+    },
     "wType": "Form",
     "windows8": {
         "needAppMenu": false

@@ -4,7 +4,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "220dp"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
@@ -27,11 +27,11 @@
     "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "70dp"
     },
     "_width_": {
         "type": "string",
-        "value": "856dp"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "containerweight": 0,
@@ -43,38 +43,22 @@
     "kuid": "h985243189fc41d69c0d39c02f4624f2",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxDashboard",
+    "parent": "flxDashboardContent",
     "pf": "frmHome",
     "responsiveData": {
         "b1": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"
-            },
-            "width": {
-                "type": "string",
-                "value": "100%"
             }
         },
         "b2": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"
             }
         },
         "b3": {
-            "height": {
-                "type": "string",
-                "value": "800dp"
-            },
             "left": {
                 "type": "string",
                 "value": "0dp"

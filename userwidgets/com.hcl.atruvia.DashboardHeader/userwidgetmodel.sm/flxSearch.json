@@ -29,28 +29,46 @@
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "96%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
     "children": [
-        "flxSearch"
+        "lblSearchIcon",
+        "txtSearch"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSearchContainer",
+    "id": "flxSearch",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b9d42fba75114ff4bcca0ba4a878d467",
+    "kuid": "c8b1f82b290f418186fde40180f263af",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFields",
+    "parent": "flxSearchContainer",
     "pf": "userwidgetmodel",
     "responsiveData": {
-        "b2": {}
+        "b1": {},
+        "b2": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "height": {
+                "type": "string",
+                "value": "30dp"
+            }
+        }
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -58,6 +76,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

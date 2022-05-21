@@ -29,16 +29,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "1000dp"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxChallengesCount",
-        "flxSearchContainer",
-        "flxFilterContainer",
-        "flxNewContainer"
+        "flxFields"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -61,10 +59,6 @@
             "minWidth": {
                 "type": "string",
                 "value": ""
-            },
-            "width": {
-                "type": "string",
-                "value": "100%"
             }
         },
         "b2": {
@@ -74,7 +68,7 @@
             },
             "width": {
                 "type": "string",
-                "value": "1024dp"
+                "value": "100%"
             }
         },
         "b3": {
@@ -84,7 +78,7 @@
             },
             "width": {
                 "type": "string",
-                "value": "1024dp"
+                "value": "100%"
             }
         }
     },

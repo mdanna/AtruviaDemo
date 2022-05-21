@@ -4,7 +4,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "_margin_": [
         0,
@@ -50,10 +50,6 @@
             "centerY": {
                 "type": "string",
                 "value": "50.00%"
-            },
-            "height": {
-                "type": "string",
-                "value": "100%"
             },
             "width": {
                 "type": "string",

@@ -1,3 +1,7 @@
 const globals = {
-  DEFAULT_LANGUAGE: 'de'
+  DEFAULT_LANGUAGE: 'de',
+  
+  EVENT_OPTIONS_OPEN: 'evtOptionsOpen',
+  EVENT_OPTIONS_CLOSE: 'evtOptionsClose',
+  EVENT_OPTIONS_SELECT: 'evtOptionsSelect'
 };

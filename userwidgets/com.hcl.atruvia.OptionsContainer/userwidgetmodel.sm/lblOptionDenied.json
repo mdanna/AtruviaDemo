@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "seae427157954c69ba64ee0742c403aa",
-    "_text_": "Label",
+    "_skin_": "s759d9c9503a454190592d20a7db104b",
+    "_text_": "Denied",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblSearch",
+    "id": "lblOptionDenied",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,14 +55,13 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j0798fead3b04980bf5675b8a1909500",
+    "kuid": "c1af8c0685ad45e4b3f506ad887c320f",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "flxFilter",
+    "parent": "flxOptionDenied",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "texti18n": "i18n.overview.header.filter.status",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

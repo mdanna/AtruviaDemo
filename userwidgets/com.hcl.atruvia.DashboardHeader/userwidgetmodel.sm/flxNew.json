@@ -21,7 +21,7 @@
     "_skin_": "s7ef481089c74ce794b3725d19c66241",
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -50,6 +50,10 @@
     "name": "kony.ui.FlexContainer",
     "parent": "flxNewContainer",
     "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {},
+        "b3": {}
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

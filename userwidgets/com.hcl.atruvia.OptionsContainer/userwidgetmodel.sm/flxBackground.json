@@ -29,29 +29,24 @@
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxSearch"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSearchContainer",
+    "id": "flxBackground",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b9d42fba75114ff4bcca0ba4a878d467",
+    "kuid": "h6376d4b6848433a87e49652cbd3b81a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFields",
+    "parent": "OptionsContainer",
     "pf": "userwidgetmodel",
-    "responsiveData": {
-        "b2": {}
-    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

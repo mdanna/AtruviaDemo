@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -29,10 +29,10 @@
     },
     "_width_": {
         "type": "string",
-        "value": "856dp"
+        "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxChallengesHeader",
@@ -55,10 +55,6 @@
             "left": {
                 "type": "string",
                 "value": "0dp"
-            },
-            "width": {
-                "type": "string",
-                "value": "100%"
             }
         },
         "b2": {

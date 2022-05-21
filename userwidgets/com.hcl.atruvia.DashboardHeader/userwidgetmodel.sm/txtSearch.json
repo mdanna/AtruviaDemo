@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -64,10 +64,13 @@
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "paddinginpixel": false,
-    "parent": "flxSearchContainer",
+    "parent": "flxSearch",
     "pf": "userwidgetmodel",
     "placeholderi18n": "i18n.overview.header.search",
     "placeholderskin": "s58e7b67a2be49afb7bb42f949dedae4",
+    "responsiveData": {
+        "b2": {}
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

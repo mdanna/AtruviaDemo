@@ -4,10 +4,6 @@
         "type": "string",
         "value": "30dp"
     },
-    "_left_": {
-        "type": "string",
-        "value": "24dp"
-    },
     "_margin_": [
         0,
         0,
@@ -23,13 +19,9 @@
     ],
     "_percent_": true,
     "_skin_": "s17281497737475dae139fa3d2b2a228",
-    "_top_": {
-        "type": "string",
-        "value": "17dp"
-    },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -43,8 +35,8 @@
         "value": "50%"
     },
     "children": [
-        "lblSearch",
-        "lblDropdown"
+        "lblFilter",
+        "lblIconDown"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -58,6 +50,9 @@
     "name": "kony.ui.FlexContainer",
     "parent": "flxFilterContainer",
     "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {}
+    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

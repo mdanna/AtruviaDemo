@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "55dp"
     },
     "_left_": {
         "type": "string",
@@ -29,29 +29,24 @@
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxSearch"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSearchContainer",
+    "id": "flxTop",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b9d42fba75114ff4bcca0ba4a878d467",
+    "kuid": "fa65923b4b0a4e8184bcd002fc47907a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFields",
+    "parent": "flxOptionsContainer",
     "pf": "userwidgetmodel",
-    "responsiveData": {
-        "b2": {}
-    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

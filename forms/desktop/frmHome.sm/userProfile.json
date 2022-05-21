@@ -47,7 +47,7 @@
     "id": "userProfile",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "i24765a1ddd249beb3b05e13abd24169",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",

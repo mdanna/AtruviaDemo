@@ -171,6 +171,6 @@
             "passthrough": []
         }
     },
-    "namespace": "com.hcl",
+    "namespace": "com.hcl.atruvia",
     "version": "1.0.0"
 }
