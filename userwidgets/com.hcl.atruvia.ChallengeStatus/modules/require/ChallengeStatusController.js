@@ -20,8 +20,8 @@ define(function() {
             defineSetter(this, 'status', value => {
               this._status = value;
               this.view.lblStatus.text = statusInfo[value] ? voltmx.i18n.getLocalizedString(statusInfo[value].i18n) : value;
-              this.view.flxStatus.skin = statusInfo[this.status].flex;
-              this.view.lblStatus.skin = statusInfo[this.status].label;
+              this.view.flxStatus.skin = statusInfo[value] ? statusInfo[value].flex : 'slFbox';
+              this.view.lblStatus.skin = statusInfo[value] ? statusInfo[value].label: 'sknlblDrk60';
             });
         }
 	};

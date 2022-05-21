@@ -67,6 +67,23 @@
                     "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
                     "type": "string",
                     "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "fd85a0714d0f41fcb37bd31b94e5d5e1",
+                    "originalPropertyKey": "language",
+                    "propertyIndex": 7,
+                    "propertyKey": "language",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "language",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
+                    "type": "string",
+                    "value": ""
                 }
             ],
             "passthrough": [
@@ -90,28 +107,6 @@
                         "wType": "Label"
                     },
                     "srcWgtKUID": "cfca53b855d54aeb9789373e8a3ed641"
-                },
-                {
-                    "access": "Enable",
-                    "defaultValue": "",
-                    "group": "General",
-                    "kuid": "h26ee985d69a49c39363f6833d05197b",
-                    "originalPropertyKey": "selection",
-                    "propertyIndex": 1,
-                    "propertyKey": "language",
-                    "pw": {
-                        "access": "readwrite",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "language",
-                        "isHiddenInTool": false,
-                        "srcWidget": "dropdownFieldLanguage",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "UserWidgetInstance"
-                    },
-                    "srcWgtKUID": "c58ed13c806e41f884f6986b2b719f10",
-                    "type": "string",
-                    "value": ""
                 },
                 {
                     "access": "Enable",

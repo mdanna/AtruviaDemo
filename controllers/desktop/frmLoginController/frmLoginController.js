@@ -13,7 +13,7 @@ define({
         }, (error) => alert(JSON.stringify(error)));
       };
     };
-    
+
   }
 
 });

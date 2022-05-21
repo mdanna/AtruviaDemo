@@ -62,6 +62,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.overview.header.filter.closed",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

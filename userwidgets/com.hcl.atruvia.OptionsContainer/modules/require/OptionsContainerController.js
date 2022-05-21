@@ -12,42 +12,44 @@ define(function() {
 
       this.view.preShow = () => {
         if(!this.initDone){
-          this.view.flxBackground.onClick = () => this.view.isVisible = false;
+          this.view.onClick = () => {
+            this.view.isVisible = false;
+          };
 
           this.view.flxOptionShowAll.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: voltmx.i18n.getLocalizedString('i18n.overview.header.filter.status')
+              selection: 'all'
             });
           };
           this.view.flxOptionSubmitted.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: 'Submitted'
+              selection: 'submitted'
             });
           };
           this.view.flxOptionPublished.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: 'Published'
+              selection: 'published'
             });
           };
           this.view.flxOptionClosed.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: 'Closed'
+              selection: 'closed'
             });
           };
           this.view.flxOptionDenied.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: 'Denied'
+              selection: 'denied'
             });
           };
           this.view.flxOptionDraft.onClick = () => {
             this.view.isVisible = false;
 			eventManager.publish(globals.EVENT_OPTIONS_SELECT, {
-              selection: 'Draft'
+              selection: 'draft'
             });
           };
 
@@ -61,30 +63,30 @@ define(function() {
     },
 
     setSkins(option){
-      this.view.flxOptionShawAll.skin = SKIN_UNSELECTED;
+      this.view.flxOptionShowAll.skin = SKIN_UNSELECTED;
       this.view.flxOptionSubmitted.skin = SKIN_UNSELECTED;
       this.view.flxOptionPublished.skin = SKIN_UNSELECTED;
       this.view.flxOptionClosed.skin = SKIN_UNSELECTED;
       this.view.flxOptionDenied.skin = SKIN_UNSELECTED;
       this.view.flxOptionDraft.skin = SKIN_UNSELECTED;
       switch(option){
-        case 'Submitted':
+        case 'submitted':
           this.view.flxOptionSubmitted.skin = SKIN_SELECTED;
           break;
-        case 'Published':
+        case 'published':
           this.view.flxOptionPublished.skin = SKIN_SELECTED;
           break;
-        case 'Closed':
+        case 'closed':
           this.view.flxOptionClosed.skin = SKIN_SELECTED;
           break;
-        case 'Denied':
+        case 'denied':
           this.view.flxOptionDenied.skin = SKIN_SELECTED;
           break;
-        case 'Draft':
+        case 'draft':
           this.view.flxOptionDraft.skin = SKIN_SELECTED;
           break;
         default:
-          this.view.flxOptionShawAll.skin = SKIN_SELECTED;
+          this.view.flxOptionShowAll.skin = SKIN_SELECTED;
           break;
       }
     }

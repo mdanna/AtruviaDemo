@@ -24,5 +24,4 @@ const statusInfo = {
       flex: 'sknFlxStatusDenied',
       label: 'sknLblStatusDenied'
     }
-
   };
