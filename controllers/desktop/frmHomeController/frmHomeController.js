@@ -1,5 +1,6 @@
 define({ 
-
+  filter: 'all',
+  
   onViewCreated(){
     this.view.init = () => {
       this.view.doLayout = () => {
@@ -13,6 +14,7 @@ define({
         this.view.flxAlerts.isVisible = selection === 'alerts';
         if(selection === 'profile'){
           const user = this.navigationContext.user;
+          this.view.userProfile.filter = this.filter;
           this.view.userProfile.photo = users[user].photoLarge;
           this.view.userProfile.name = users[user].name;
           this.view.userProfile.username = users[user].name;
@@ -140,13 +142,20 @@ define({
       };
 
       this.view.challengeEditor.onSave = (status) => {
-        this.view.challengesList.loadData();
+        this.view.challengesList.loadData(this.filter);
       };
+      
+      eventManager.subscribe(globals.EVENT_OPTIONS_SELECT, ({selection}) => {
+        this.filter = selection;
+        this.view.challengesList.loadData(this.filter);
+      });
 
     };
 
     this.view.preShow = () => {
       const user = this.navigationContext.user;
+      this.filter = this.navigationContext.filter;
+      
       this.view.leftMenu.user = user;
       this.view.dashboardHeader.userRole = users[user].role;
       this.view.challengesList.user = user;
@@ -157,7 +166,7 @@ define({
       this.view.flxAlerts.isVisible = false;
       this.view.challengeEditor.isVisible = false;
       this.view.userProfile.isVisible = false;
-      this.view.challengesList.loadData();
+      this.view.challengesList.loadData(this.filter);
     };
   },
 
@@ -171,7 +180,7 @@ define({
     objSvc.deleteRecord({
       "dataObject": dataObject
     }, (response) => {
-      this.view.challengesList.loadData();        
+      this.view.challengesList.loadData(this.filter);        
     }, (error) => {
       kony.print("Error in record deletion: " + JSON.stringify(error));
     });        

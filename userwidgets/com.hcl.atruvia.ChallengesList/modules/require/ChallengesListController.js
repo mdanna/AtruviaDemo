@@ -19,7 +19,7 @@ define(function() {
       });
     },
 
-    loadData(){
+    loadData(filter){
       this.view.flxChallengesList.removeAll();
       
       const role = users[this.user].role;
@@ -32,8 +32,9 @@ define(function() {
       var odataUrl = `$filter=`;
       if(role === 'lob'){
         odataUrl += `lob eq ${this.user}`;
+        odataUrl += filter !== 'all' ? ` and status eq '${filter}'` : '';
       } else if(role === 'hub'){
-        odataUrl += `status ne 'draft'`;
+        odataUrl += (filter !== 'all' && filter !== 'draft')? `status eq '${filter}'` : `status ne 'draft'`;
       } else if(role === 'xpa'){
         odataUrl += `status eq 'published'`;
       }
@@ -60,6 +61,8 @@ define(function() {
           challengesListRow.onViewPdf = () => this.onDelete({id: record.id});
           this.view.flxChallengesList.add(challengesListRow);
         });
+        
+        eventManager.publish(globals.EVENT_DATA_LOADED, ({count: response.records.length, filter: filter}));
       }, (error) => {
         alert("Failed to fetch challenges: " + JSON.stringify(error));
       });

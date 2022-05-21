@@ -84,6 +84,23 @@
                     "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
                     "type": "string",
                     "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "b8afdccbf55d42cb888df4b2a04595ce",
+                    "originalPropertyKey": "filter",
+                    "propertyIndex": 8,
+                    "propertyKey": "filter",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "filter",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c224f43161844b8ca53b05bc49ed49ff",
+                    "type": "string",
+                    "value": ""
                 }
             ],
             "passthrough": [
