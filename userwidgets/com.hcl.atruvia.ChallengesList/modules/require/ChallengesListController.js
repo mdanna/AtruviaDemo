@@ -5,6 +5,11 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.onClick = () => this.onRowClick(this.id);
+          
+          this.view.doLayout = () => {
+            this.view.flxChallengesList.height = `${this.view.frame.height - 45}dp`;
+          };
+          
           this.initDone = true;
         }
       };

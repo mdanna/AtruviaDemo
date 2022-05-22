@@ -6,6 +6,10 @@ define({
       this.view.doLayout = () => {
         this.view.flxContentArea.width = `${this.view.frame.width - 160}dp`;
       };
+      
+      this.view.flxDashboardContent.doLayout = () => {
+        this.view.challengesList.height = `${this.view.flxDashboardContent.frame.height - 70}dp`;
+      };
 
       this.view.dashboardHeader.onSearchChange = (searchFilter) => {
         this.searchFilter = searchFilter;

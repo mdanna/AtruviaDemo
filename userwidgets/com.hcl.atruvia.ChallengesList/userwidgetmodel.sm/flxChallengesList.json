@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7f98debbd484f2ebbaf46055bd8c952",
+    "_skin_": "s8291192b1fe425790d3f7735b2df2c3",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,7 +32,9 @@
         "value": "95%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
@@ -44,22 +46,29 @@
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
     "enablescrolling": true,
+    "horizontalscrollindicator": true,
     "id": "flxChallengesList",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "cb46a94c3b174550aefc6b3644f8c7ec",
     "layouttype": 4,
-    "name": "kony.ui.FlexContainer",
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
     "parent": "ChallengesList",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "wType": "FlexContainer",
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
     "widgetalignment": 1,
     "zindex": 1
 }
