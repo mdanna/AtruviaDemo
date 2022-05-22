@@ -34,7 +34,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "e1dcc08d1f654492987bdc5737f088f3",
+                    "kuid": "hadc0d01190542a6a8d5d39ef05479cf",
                     "paramList": [],
                     "propertyIndex": 1,
                     "propertyKey": "onSave",
@@ -47,12 +47,25 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "j48a92daee3c485a89233852ae46c9a9",
+                    "kuid": "afaafd86bbf946bc9de65552349e935a",
                     "paramList": [],
                     "propertyIndex": 2,
                     "propertyKey": "onClickSave",
                     "pw": {
                         "displayName": "onClickSave",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g8564eefeaf04243bf78b5952a200ec7",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickDashboard",
+                    "pw": {
+                        "displayName": "onClickDashboard",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "h531f08a300c43afa5f37a251e029a86",

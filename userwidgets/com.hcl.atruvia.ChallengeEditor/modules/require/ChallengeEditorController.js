@@ -4,6 +4,8 @@ define(function() {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
       this.view.preShow = () => {
         if(!this.initDone){
+          
+          this.view.lblDashboard.onTouchEnd = () => this.onClickDashboard();
 
           this.view.editFieldName.onTextChange = () => {
             this.setFormComplete(this.checkFormComplete());
@@ -342,6 +344,9 @@ define(function() {
     },
 
     //this is the callback of the save action, caught by the controller to reload the data
-    onSave(status){}
+    onSave(status){},
+    
+    onClickDashboard(){}
+    
   };
 });

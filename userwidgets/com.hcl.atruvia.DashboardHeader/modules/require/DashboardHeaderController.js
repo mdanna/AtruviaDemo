@@ -18,11 +18,12 @@ define(function() {
 
           eventManager.subscribe(globals.EVENT_DATA_LOADED, ({count, filter}) => {
             let infoText;
+              const keyword = (count === 1 ? 'challenge' : 'challenges');
             if(filter === 'all'){
-              infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges')}`;
+              infoText = `${count} ${voltmx.i18n.getLocalizedString(`i18n.overview.info.${keyword}`)}`;
             } else {
               const filterName = voltmx.i18n.getLocalizedString(this.getI18nKeyForFilter(filter));
-              infoText = `${count} ${voltmx.i18n.getLocalizedString('i18n.overview.info.challenges.filter')} '${filterName}'`;
+              infoText = `${count} ${voltmx.i18n.getLocalizedString(`i18n.overview.info.${keyword}.filter`)} '${filterName}'`;
             }
             this.view.lblChallengesInfo.text = infoText;
           });

@@ -1,12 +1,12 @@
 define({ 
   filter: 'all',
-  
+
   onViewCreated(){
     this.view.init = () => {
       this.view.doLayout = () => {
         this.view.flxContentArea.width = `${this.view.frame.width - 160}dp`;
       };
-      
+
       this.view.flxDashboardContent.doLayout = () => {
         this.view.challengesList.height = `${this.view.flxDashboardContent.frame.height - 70}dp`;
       };
@@ -25,17 +25,16 @@ define({
           const user = this.navigationContext.user;
           this.view.userProfile.filter = this.filter;
           this.view.userProfile.searchFilter = this.searchFilter;
-          this.view.userProfile.photo = users[user].photoLarge;
-          this.view.userProfile.name = users[user].name;
-          this.view.userProfile.username = users[user].name;
-          this.view.userProfile.title = users[user].title;
-          this.view.userProfile.usertitle = users[user].title;
-          this.view.userProfile.email = user;
           this.view.userProfile.language = voltmx.store.getItem(`language_${user}`) || globals.DEFAULT_LANGUAGE;
-          this.view.userProfile.isVisible = true;
+          this.view.userProfile.show(user);
         } else {
           this.view.userProfile.isVisible = false;
         }
+      };
+
+      this.view.challengeEditor.onClickDashboard = () => {
+        this.view.challengeEditor.isVisible = false;
+        this.view.flxDashboard.isVisible = true;
       };
 
       this.view.dashboardHeader.onClickNewChallenge = () => {
@@ -64,7 +63,7 @@ define({
           showButtonCenter: false, 
           showButtonRight: true
         });
-        
+
       };
 
       this.view.challengeEditor.onClickSave = (status) => {
@@ -154,7 +153,7 @@ define({
       this.view.challengeEditor.onSave = (status) => {
         this.view.challengesList.loadData(this.filter);
       };
-      
+
       eventManager.subscribe(globals.EVENT_OPTIONS_SELECT, ({selection}) => {
         this.filter = selection;
         this.view.challengesList.loadData(this.filter, this.searchFilter);
@@ -166,7 +165,7 @@ define({
       const user = this.navigationContext.user;
       this.filter = this.navigationContext.filter;
       this.searchFilter = this.navigationContext.searchFilter;
-      
+
       this.view.leftMenu.user = user;
       this.view.dashboardHeader.userRole = users[user].role;
       this.view.challengesList.user = user;
@@ -178,6 +177,9 @@ define({
       this.view.challengeEditor.isVisible = false;
       this.view.userProfile.isVisible = false;
       this.view.challengesList.loadData(this.filter, this.searchFilter);
+      
+      this.view.lblAlerts.text = voltmx.i18n.getLocalizedString('i18n.message.notimplemented');
+      this.view.lblStatistics.text = voltmx.i18n.getLocalizedString('i18n.message.notimplemented');
     };
   },
 

@@ -40,10 +40,7 @@
         "type": "string",
         "value": "50%"
     },
-    "children": [
-        "ChallengesListRow",
-        "CopyChallengesListRow0f387af8879534e"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "decelerat": false,

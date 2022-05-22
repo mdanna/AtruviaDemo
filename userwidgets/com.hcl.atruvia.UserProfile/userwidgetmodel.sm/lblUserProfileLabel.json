@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblChallengeDetails",
+    "id": "lblUserProfileLabel",
     "info": null,
     "ipad": {
         "psp": {
@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "g5461e0384f941ecbb2c36ec67d00040",
     "name": "kony.ui.Label",
-    "parent": "flxChallengeDetails",
+    "parent": "flxUserProfileLabel",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -25,6 +25,8 @@ define(function() {
     },
 
     loadData(filter, searchFilter){
+      voltmx.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
+      
       const role = users[this.user].role;
 
       var objSvc = VMXFoundry.getObjectService("ChallengeOS", {
@@ -49,18 +51,21 @@ define(function() {
       }, (response) => {
         this.data = response.records;
         this.applySearchFilter(filter, searchFilter);
-
+        voltmx.application.dismissLoadingScreen();
       }, (error) => {
+        voltmx.application.dismissLoadingScreen();
         alert("Failed to fetch challenges: " + JSON.stringify(error));
       });
-
-      this.view.forceLayout();
     },
 
     applySearchFilter(filter, searchFilter){
       searchFilter = searchFilter || '';
-      const filteredData = this.data.filter((record) => {
+      let filteredData = this.data.filter((record) => {
         return record.name.toLowerCase().includes(searchFilter.toLowerCase()) || record.id.toLowerCase().includes(searchFilter.toLowerCase());
+      });
+      
+      filteredData.sort((a, b) => {
+        return (a.CreatedDateTime > b.CreatedDateTime) ? -1 : (a.CreatedDateTime < b.CreatedDateTime ? 1 : 0);
       });
 
       this.view.flxChallengesList.removeAll();
@@ -81,9 +86,10 @@ define(function() {
         challengesListRow.onViewPdf = () => this.onDelete({id: record.id});
         this.view.flxChallengesList.add(challengesListRow);
       });
-
       eventManager.publish(globals.EVENT_DATA_LOADED, ({count: filteredData.length, filter: filter}));
     },
+    
+    
 
     onEdit({id, status, mode}){},
     onDelete({id, status}){},

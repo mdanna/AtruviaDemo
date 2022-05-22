@@ -41,7 +41,7 @@
         "value": "50%"
     },
     "children": [
-        "flxChallengeDetails",
+        "flxUserProfileLabel",
         "flxImage",
         "lblName",
         "lblTitle",

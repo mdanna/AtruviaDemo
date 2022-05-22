@@ -80,6 +80,44 @@
                 "type": "string",
                 "value": "1dp"
             }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "1dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "1dp"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "1dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "1dp"
+            }
         }
     },
     "retaincontentalignment": false,
