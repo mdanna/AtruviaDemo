@@ -7,7 +7,7 @@ define(function() {
           this.view.dropdownFieldLanguage.onSelection = () => {
             const language = this.view.dropdownFieldLanguage.selection;
             voltmx.i18n.setCurrentLocaleAsync(language, () => {
-              voltmx.store.setItem(`language_${this.email}`, language);
+              voltmx.store.setItem(`language_${this.user}`, language);
               new voltmx.mvc.Navigation('frmRedirect').navigate({
                 user: this.user, 
                 filter: this.filter || 'all', 
