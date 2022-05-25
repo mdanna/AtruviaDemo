@@ -11,6 +11,7 @@ define(function() {
       });
 
       this.view.preShow = () => {
+        this.view.isVisible = false;
         if(!this.initDone){
           this.view.onClick = () => {
             this.view.isVisible = false;
@@ -63,6 +64,12 @@ define(function() {
     },
 
     setSkins(option){
+      this.view.lblOptionShowAll.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.all');
+      this.view.lblOptionSubmitted.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.submitted');
+      this.view.lblOptionPublished.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.published');
+      this.view.lblOptionClosed.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.closed');
+      this.view.lblOptionDenied.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.denied');
+      this.view.lblOptionDraft.text = voltmx.i18n.getLocalizedString('i18n.overview.header.filter.draft');
       this.view.flxOptionShowAll.skin = SKIN_UNSELECTED;
       this.view.flxOptionSubmitted.skin = SKIN_UNSELECTED;
       this.view.flxOptionPublished.skin = SKIN_UNSELECTED;

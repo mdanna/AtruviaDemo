@@ -134,8 +134,8 @@ define({
         this.view.flxDashboard.isVisible = true;
       };
 
-      this.view.cmpPopup.onClickRight = (type) => {
-        switch(type){
+      this.view.cmpPopup.onClickRight = (status) => {
+        switch(status){
           case 'unpublished':
           case 'closed':
             this.view.challengeEditor.save(status);
@@ -143,8 +143,8 @@ define({
             this.view.flxDashboard.isVisible = true;
             break;
           default:
-            if(type.startsWith('delete_')){
-              this.deleteChallenge(type.replace('delete_', ''));
+            if(status.startsWith('delete_')){
+              this.deleteChallenge(status.replace('delete_', ''));
             }
             break;
         }
