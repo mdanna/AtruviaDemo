@@ -34,6 +34,12 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s11e1d2de25e4e4b98f39fc2f65f4091"
+        }
+    },
+    "disabledSkins": {},
     "focusskin": "sef1111cad684b5483a79099530d7f4e",
     "groupcells": false,
     "id": "lbUser",
@@ -75,9 +81,7 @@
     "parent": "flxLogin",
     "pf": "frmLogin",
     "responsiveData": {
-        "b1": {
-            "skin": "sd8aeefde15f44adb56d284ffd6f752a"
-        }
+        "b1": {}
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -35,12 +35,15 @@
         "value": "50%"
     },
     "children": [
-        "lblFilter",
-        "lblIconDown"
+        "flxFilterHover"
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {}
+    },
     "enablescrolling": true,
+    "hoverskin": "",
     "id": "flxFilter",
     "info": null,
     "iscustomlayout": false,
@@ -51,7 +54,14 @@
     "parent": "flxFilterContainer",
     "pf": "userwidgetmodel",
     "responsiveData": {
-        "b2": {}
+        "b2": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {
+                "hoverSkin": "s1934579eb03433b983ab7d9aac17025"
+            }
+        }
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

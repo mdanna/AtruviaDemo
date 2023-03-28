@@ -35,11 +35,13 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblIcon",
-        "lblItem"
+        "flxButton"
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {}
+    },
     "enablescrolling": true,
     "id": "ButtonMenu",
     "info": null,

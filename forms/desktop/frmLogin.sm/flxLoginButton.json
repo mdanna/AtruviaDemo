@@ -39,6 +39,12 @@
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "scd34423542048c69717b2bb0a046673"
+        }
+    },
+    "disabledSkins": {},
     "enablescrolling": true,
     "id": "flxLoginButton",
     "info": null,

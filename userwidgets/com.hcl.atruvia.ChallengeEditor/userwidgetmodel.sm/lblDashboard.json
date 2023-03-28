@@ -41,6 +41,11 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s936edd7df76430989be74977d46375d"
+        }
+    },
     "id": "lblDashboard",
     "info": null,
     "ipad": {

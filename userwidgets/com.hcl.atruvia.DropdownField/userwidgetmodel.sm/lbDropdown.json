@@ -34,6 +34,11 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s6ef90c186b04c5ab2ec1ff23740aa38"
+        }
+    },
     "focusskin": "sef1111cad684b5483a79099530d7f4e",
     "groupcells": false,
     "id": "lbDropdown",

@@ -58,7 +58,7 @@
     "kuid": "j0798fead3b04980bf5675b8a1909500",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "flxFilter",
+    "parent": "flxFilterHover",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

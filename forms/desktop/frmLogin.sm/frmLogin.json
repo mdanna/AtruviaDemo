@@ -120,7 +120,7 @@
     "titlebar": true,
     "type": 3,
     "vizProps": {
-        "globalRespDesignEnabled": false
+        "globalRespDesignEnabled": true
     },
     "wType": "Form",
     "windows8": {

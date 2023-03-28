@@ -61,7 +61,7 @@
     "isvisible": true,
     "kuid": "b0014c799a8d482d9db1583435af1888",
     "name": "kony.ui.Label",
-    "parent": "flxFilter",
+    "parent": "flxFilterHover",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

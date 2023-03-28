@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "cb0e7fbb84944ed0b2e4d32e8a3d8550",
     "name": "kony.ui.Label",
-    "parent": "ButtonMenu",
+    "parent": "flxButton",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

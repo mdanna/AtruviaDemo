@@ -49,6 +49,11 @@
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s92227e618f7495cb22682dae8783de7"
+        }
+    },
     "enablescrolling": true,
     "id": "flxOptions",
     "info": null,

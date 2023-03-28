@@ -5,10 +5,6 @@
         "type": "string",
         "value": "100%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
         1,
         1,
@@ -16,11 +12,15 @@
         1
     ],
     "_padding_": [
+        1,
         0,
-        0,
-        0,
+        1,
         0
     ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
     "_skin_": "s7637d85c60e4ea2accb703e2825c0e4",
     "_text_": "Save to Draft Status",
     "_top_": {
@@ -28,8 +28,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,7 +40,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 6,
+    "contentalignment": 5,
     "id": "lblAction",
     "info": null,
     "ipad": {
@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "d7473355c4444dfbb7abc2ac9be5ee6e",
     "name": "kony.ui.Label",
-    "parent": "flxAction",
+    "parent": "flxHover",
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b2": {

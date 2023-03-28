@@ -52,12 +52,14 @@ define(function() {
     
     selectButton(button){
       button.skin = 'sknFlxVioletRoundedCorners';
+      button.hoverSkin = 'sknFlxVioletRoundedCornersHover';
       button.skinIcon = 'sknLblIconWhite100';
       button.skinItem = 'sknLblWhite70';
     },
     
     unselectButton(button){
       button.skin = 'slFbox';
+      button.hoverSkin = 'slFboxHover';
       button.skinIcon = 'sknLblIconDark100';
       button.skinItem = 'sknLblDark70';
     },

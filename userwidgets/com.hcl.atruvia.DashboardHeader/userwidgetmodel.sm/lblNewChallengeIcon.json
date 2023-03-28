@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "e32397fba7b042d6b2b6b0b004cac254",
     "name": "kony.ui.Label",
-    "parent": "flxNew",
+    "parent": "flxNewHover",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

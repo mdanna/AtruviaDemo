@@ -83,7 +83,7 @@ define(function() {
         challengesListRow.onRowClick = () => this.onEdit({id: record.id, status: record.status, mode: 'readOnly'});
         challengesListRow.onClickEdit = () => this.onEdit({id: record.id, status: record.status, mode: 'edit'});
         challengesListRow.onClickDelete = () => this.onDelete({id: record.id, status: record.status});
-        challengesListRow.onViewPdf = () => this.onDelete({id: record.id});
+        challengesListRow.onViewPdf = () => this.onViewPdf({id: record.id});
         this.view.flxChallengesList.add(challengesListRow);
       });
       eventManager.publish(globals.EVENT_DATA_LOADED, ({count: filteredData.length, filter: filter}));
